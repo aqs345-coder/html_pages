@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resumo: Análise de Circuitos I</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Elementos de um Circuito</h1>
+    </header>
+
+    <main class="content-container">
+      <section class="study-card">
+        <h2 class="section-title">Tensão Elétrica</h2>
+        <p class="concept">
+          <strong>Conceito:</strong> Força exercida sobre os elétrons livres
+          para que estes se movimentem no interior de um condutor.
+        </p>
+        <div class="box-wrapper">
+          <span class="symbol-text"><strong>Símbolo:</strong> V, E ou U.</span>
+          <figure class="image-container">
+            <img
+              src="data/simbolo_tensao.png"
+              alt="Símbolo de Tensão Elétrica"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Corrente Elétrica</h2>
+        <p class="concept">
+          <strong>Introdução:</strong> Ao ligar dois corpos com cargas elétricas
+          diferentes, há um fluxo de elétrons de um corpo para o outro, a fim de
+          reestabelecer o equilíbrio. Este fluxo de elétrons é denominado
+          <strong>corrente elétrica</strong>.
+        </p>
+        <div class="box-wrapper">
+          <span class="symbol-text"><strong>Símbolo:</strong> I.</span>
+          <figure class="image-container">
+            <img
+              src="data/simbolo_corrente.png"
+              alt="Símbolo de Corrente Elétrica"
+            />
+          </figure>
+        </div>
+        <p class="concept">
+          A <strong>intensidade de corrente elétrica</strong> é o número de
+          cargas elétricas que passam por segundo em um determinado ponto.
+        </p>
+        <div class="formula-wrapper">
+          <p class="formula">1A = 1C/s = (6,25 x 10<sup>18</sup>e)/1s -></p>
+          <figure>
+            <img
+              class="formula-image"
+              src="data/limite_corrente.png"
+              alt="Cálculo do limite de corrente"
+            />
+          </figure>
+        </div>
+
+        <article class="examples-section">
+          <h3>Exemplos práticos:</h3>
+          <ul class="example-list">
+            <li>
+              <p>
+                Se uma corrente de 2A passar através de um medidor durante um
+                minuto, isso equivale a quantos Coulombs?
+              </p>
+              <div class="resolution">Resolução 1</div>
+            </li>
+            <li>
+              <p>
+                Durante 45 segundos uma secção de um condutor foi atravessada
+                por 9x10<sup>20</sup> elétrons. Qual a intensidade média de
+                corrente elétrica?
+              </p>
+              <div class="resolution">Resolução 2</div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="sub-topic">
+          <h3>Corrente Contínua (CC) e Corrente Alternada (CA)</h3>
+          <p>
+            Um gerador de tensão é um dispositivo que mantém, por meio de uma
+            ação química, mecânica ou outra qualquer, uma tensão entre dois
+            polos, para que assim o deslocamento das cargas elétricas ocorra.
+          </p>
+
+          <ul class="standard-list">
+            <li><strong>Químico:</strong> Pilha</li>
+            <li><strong>Mecânico:</strong> Gerador Eólico</li>
+            <li><strong>Solar:</strong> Painéis Solares</li>
+          </ul>
+
+          <div class="generator-types">
+            <div class="generator-box">
+              <h4>Geradores de Tensão Constante</h4>
+              <p>
+                Corrente de sentido e intensidade constantes no decorrer do
+                tempo.
+              </p>
+              <ul class="standard-list">
+                <li>Pilhas</li>
+                <li>Baterias</li>
+                <li>Painéis solares</li>
+              </ul>
+            </div>
+            <div class="generator-box">
+              <h4>Geradores de Tensão Alternada</h4>
+              <p>
+                Corrente de sentido e intensidade variadas no decorrer do tempo.
+              </p>
+              <ul class="standard-list">
+                <li>Hidrelétricas</li>
+                <li>Termelétricas</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Resistência Elétrica</h2>
+        <p class="concept">
+          <strong>Conceito:</strong> Oposição encontrada pela corrente elétrica
+          ao percorrer um material.
+        </p>
+        <ul class="standard-list">
+          <li>
+            Quanto mais elétrons livres possui o material, menor sua
+            resistência.
+          </li>
+          <li>
+            A resistência depende das dimensões físicas e do tipo do material.
+          </li>
+        </ul>
+        <div class="box-wrapper">
+          <span class="symbol-text"><strong>Símbolo:</strong> R.</span>
+          <figure class="image-container">
+            <img
+              src="data/simbolo_resistencia.png"
+              alt="Símbolo de Resistência Elétrica"
+            />
+          </figure>
+        </div>
+
+        <article class="sub-topic">
+          <h3>Resistores</h3>
+          <ul class="standard-list">
+            <li>
+              Dispositivos fabricados para fazerem uso de sua resistência
+              elétrica.
+            </li>
+            <li>
+              Amplamente utilizados na eletrônica e eletricidade em diferentes
+              circuitos.
+            </li>
+            <li>
+              O chuveiro elétrico e o ferro elétrico são equipamentos que
+              utilizam a resistência elétrica para transformar energia elétrica
+              em energia térmica (calor).
+            </li>
+          </ul>
+
+          <div class="highlight-box">
+            <p>
+              <strong>Efeito Joule:</strong> É a transformação de energia
+              elétrica em energia térmica. O aquecimento é provocado pela maior
+              vibração dos átomos. É devido a esse efeito que a lâmpada de
+              filamento emite luz. O efeito Joule também é responsável pelo
+              consumo de energia elétrica do circuito, quando essa energia se
+              transforma em calor.
+            </p>
+          </div>
+
+          <h4>Principais tipos de resistores:</h4>
+          <ul class="component-list">
+            <li>
+              <strong>Fixos:</strong> Valor da resistência não pode ser
+              alterado.
+              <figure>
+                <img
+                  class="img-resistor"
+                  src="data/resistor_fixo.png"
+                  alt="Resistor Fixo"
+                />
+              </figure>
+            </li>
+            <li>
+              <strong>Ajustáveis:</strong> Valor da resistência pode ser
+              alterado uma única vez.
+              <figure>
+                <img
+                  class="img-resistor"
+                  src="data/resistor_ajustavel.png"
+                  alt="Resistor Ajustável"
+                />
+              </figure>
+            </li>
+            <li>
+              <strong>Variáveis:</strong> Valor da resistência pode ser alterado
+              continuamente.
+              <figure>
+                <img
+                  class="img-resistor"
+                  src="data/resistor_variavel.png"
+                  alt="Resistor Variável"
+                />
+              </figure>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Lei de OHM</h2>
+        <p class="concept">
+          A <strong>Lei de Ohm</strong> afirma que, para um condutor mantido à
+          temperatura constante, a razão entre a tensão entre dois pontos e a
+          corrente elétrica é constante. Essa constante é denominada de
+          resistência elétrica.
+        </p>
+        <figure class="image-container block-image">
+          <img src="data/lei_de_ohm.png" alt="Fórmula da Lei de Ohm" />
+        </figure>
+        <div class="info-box">
+          <p><strong>Tensão e sentido da Corrente em um resistor:</strong></p>
+          <figure class="image-container">
+            <img
+              src="data/tensao_sentido_corrente.png"
+              alt="Sentido da corrente e tensão no resistor"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Potência Elétrica</h2>
+        <p class="concept">
+          O termo é aplicado para fornecer uma indicação de quantidade de
+          trabalho que pode ser realizado em um determinado período de tempo.
+          <strong
+            >Potência é a velocidade com que um trabalho é executado.</strong
+          >
+        </p>
+        <div class="formula-group">
+          <p><strong>Cálculo de potência:</strong></p>
+          <figure class="image-container">
+            <img
+              src="data/calculo_potencia.png"
+              alt="Cálculo básico de potência"
+            />
+          </figure>
+          <figure class="image-container">
+            <img
+              src="data/formulas_potencia.png"
+              alt="Variações da fórmula de potência"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Elementos Passivos e Ativos</h2>
+        <p class="concept">
+          Os elementos de um circuito podem ser classificados em relação à forma
+          como conduzem eletricidade em 3 grupos:
+        </p>
+        <ul class="standard-list">
+          <li>Passivos;</li>
+          <li>Ativos;</li>
+          <li>Eletromecânicos.</li>
+        </ul>
+
+        <div class="element-types">
+          <div class="type-card">
+            <h4>Passivos</h4>
+            <p>
+              Todos os componentes que não aumentam a intensidade de uma
+              corrente ou tensão de um circuito. Não geram energia; eles apenas
+              interagem com a energia, dissipando-a. Não geram ganho nem
+              direcionam a corrente, embora possam retardá-la ou armazená-la.
+            </p>
+            <ul class="tags-list">
+              <li>Resistores</li>
+              <li>Capacitores</li>
+              <li>Indutores</li>
+            </ul>
+          </div>
+
+          <div class="type-card">
+            <h4>Ativos</h4>
+            <p>
+              São capazes de gerar energia e também podem manipular a direção da
+              corrente dentro do circuito. Estes componentes são dispositivos
+              que fornecem ganho à corrente ou a direcionam.
+            </p>
+            <ul class="tags-list">
+              <li>Diodos</li>
+              <li>Transistores</li>
+              <li>Fontes de Energia</li>
+            </ul>
+          </div>
+
+          <div class="type-card">
+            <h4>Eletromecânicos</h4>
+            <p>
+              São todos aqueles que envolvem algum movimento mecânico,
+              combinando processos elétricos e mecânicos em um único
+              dispositivo.
+            </p>
+            <ul class="tags-list">
+              <li>Relés</li>
+              <li>Cristal</li>
+              <li>Chaves</li>
+              <li>Motores</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Ondas em Circuitos CA</h2>
+
+        <p class="concept">
+          <strong>Informação Prévia:</strong> Os conceitos básicos e os
+          elementos de uma onda devem estar bem consolidados no seu
+          conhecimento. Você deve saber o que é e como calcular: Frequência,
+          Período, Amplitude, Velocidade Angular e o Valor Instantâneo de uma
+          onda.
+        </p>
+        <p class="concept">
+          O que será aprofundado aqui é o conceito de
+          <strong>Tensão Eficaz</strong> e, posteriormente, o
+          <strong>Adianto ou Atraso de Corrente (Defasagem)</strong>.
+        </p>
+
+        <article class="sub-topic">
+          <h3>Tensão Eficaz (Valor RMS)</h3>
+
+          <p>
+            Em um circuito de corrente alternada (CA), o valor da tensão varia
+            continuamente ao longo do tempo, formando uma onda senoidal que
+            atinge picos positivos e negativos. Como a tensão não é constante,
+            medir o "trabalho real" que essa onda consegue realizar exige um
+            referencial. É aí que entra a <strong>Tensão Eficaz</strong>, também
+            conhecida como <strong>Tensão RMS</strong> (do inglês
+            <em>Root Mean Square</em>, ou Valor Quadrático Médio).
+          </p>
+
+          <div class="highlight-box">
+            <p>
+              <strong>A Equivalência CA e CC:</strong> A Tensão Eficaz de um
+              sinal alternado é exatamente igual ao valor de uma
+              <strong>tensão contínua (CC)</strong> que produziria a
+              <strong>mesma dissipação de potência (calor)</strong> em um mesmo
+              resistor.
+            </p>
+          </div>
+
+          <p>
+            <strong>Na prática:</strong> Se você ligar um aquecedor a uma tomada
+            de tensão alternada com 220V RMS, ele vai esquentar exatamente o
+            mesmo tanto que esquentaria se fosse ligado a uma grande bateria de
+            tensão contínua de exatos 220V.
+          </p>
+
+          <p>
+            Para ondas perfeitamente senoidais, o cálculo do valor eficaz é
+            feito dividindo o valor de pico (a amplitude máxima da onda) pela
+            raiz quadrada de 2.
+          </p>
+
+          <div class="box-wrapper">
+            <span class="symbol-text"><strong>Cálculo:</strong></span>
+            <figure class="image-container">
+              <img
+                src="data/formula_tensao_eficaz.png"
+                alt="Fórmula matemática da Tensão Eficaz (RMS)"
+              />
+            </figure>
+          </div>
+        </article>
+        <article class="sub-topic">
+          <h3>Potência Dissipada</h3>
+
+          <p>
+            Em um circuito puramente resistivo, a potência dissipada pode ser
+            calculada pelas mesmas equações utilizadas nos circuitos de corrente
+            contínua. Contudo, deve ser utilizado os valores eficazes da tensão
+            e da corrente.
+          </p>
+          <div class="box-wrapper">
+            <span class="symbol-text"><strong>Cálculo:</strong></span>
+            <figure class="image-container">
+              <img
+                src="data/formula_potencia_dissipada.png"
+                alt="Fórmula matemática da Potência Dissipada (RMS)"
+              />
+            </figure>
+          </div>
+          <h3>Diferença de Fase ou Defasagem</h3>
+          <p>
+            A diferença de fase entre duas curvas é sempre medida entre dois
+            pontos do eixo horizontal nos quais as duas curvas têm a mesma
+            inclinação.
+          </p>
+          <ul class="standard-list">
+            <li>
+              Quando duas formas de onda interceptam o eixo horizontal no mesmo
+              ponto e com a mesma inclinação, elas estão
+              <strong>em fase</strong>;
+            </li>
+            <li>
+              Quando duas formas de onda interceptam o eixo horizontal em pontos
+              diferentes e com a mesma inclinação, elas estão
+              <strong>defasadas</strong>;
+            </li>
+            <li>
+              Termos utilizados para indicar diferenças de fase entre duas
+              formas de onda senoidas de mesma frequência e plotadas no mesmo
+              gráfico:
+
+              <ul class="box-wrapper component-list">
+                <li>Atrasado</li>
+                <li>Adiantado</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="box-wrapper">
+            <ul class="component-list">
+              <li class="card-item">
+                <h3>Atrasado:</h3>
+                <figure>
+                  <img
+                    src="data/curva_atrasada.png"
+                    alt="Gráfico de seno atrasado"
+                  />
+                  <figcaption>
+                    Diz-se que a curva que representa o seno está
+                    <strong>atrasada</strong> de 90º em relação à curva do
+                    cosseno.
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="card-item">
+                <h3>Adiantado:</h3>
+                <figure>
+                  <img
+                    src="data/curva_adiantada.png"
+                    alt="Gráfico de cosseno adiantado"
+                  />
+                  <figcaption>
+                    Diz-se que a curva que representa o cosseno está
+                    <strong>adiantada</strong> de 90º em relação à curva do
+                    seno.
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="study-card">
+        <h2 class="section-title">Elementos de Um Circuito</h2>
+        <p class="concept">
+          Elementos como nós, ramos e malhas já são de conhecimento comum. Aqui
+          abordaremos os elementos não antes vistos.
+        </p>
+        <div class="box-wrapper">
+          <ul class="component-list">
+            <li>
+              Potencial 0 - Terra:
+              <figure>
+                <img
+                  height="100px"
+                  src="data/potencial_0.png"
+                  alt="Figura de um Potencial"
+                />
+              </figure>
+            </li>
+            <li>
+              Circuito Aberto:
+              <figure>
+                <img
+                  height="100px"
+                  src="data/circuito_aberto.png"
+                  alt="Figura de um Circuito Aberto"
+                />
+              </figure>
+            </li>
+            <li>
+              Curto Circuito:
+              <figure>
+                <img
+                  height="100px"
+                  src="data/curto_circuito.png"
+                  alt="Figura de um Circuito Fechado"
+                />
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="study-card">
+        <h2 class="section-title">Associação em Série</h2>
+        <p>Dois elementos estão em série se:</p>
+        <ul class="standard-list">
+          <li>Possuem somente um terminal em comum;</li>
+          <li>
+            O ponto em comum entre os dois elementos não está conectado a outro
+            elemento percorrido por corrente;
+          </li>
+          <figure>
+            <img
+              width="800px"
+              src="data/associacao_serie.png"
+              alt="Figura mostrando uma associação em série de resistores"
+            />
+          </figure>
+        </ul>
+        <div class="highlight-box">
+          <p>
+            Para resistores em série, a resistência total de uma configuração em
+            série é a soma das resistências.
+          </p>
+          <p class="formula">
+            R<sub>T</sub>=R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub> + R<sub
+              >4</sub
+            >
+            + ...
+          </p>
+        </div>
+        <p>Regras para associação em série:</p>
+        <ul class="standard-list">
+          <li>A corrente em cada elemento em série é a mesma;</li>
+          <li>A resistência total é maior que a maior resistência;</li>
+          <li>
+            A tensão através de cada elemento é uma função de sua resistência
+            terminal;
+          </li>
+          <li>
+            A Potência total é a soma das potências individuais de cada
+            elemento;
+          </li>
+        </ul>
+        <h3>Fontes de Tensão</h3>
+        <p class="concept">
+          A associação em série de fontes de tensão conecta o polo positivo de
+          uma fonte ao polo negativo da seguinte, resultando em uma soma das
+          tensões individuais.
+        </p>
+        <p class="concept">
+          É crucial observar a polaridade das ligações: se todas as fontes
+          estiverem alinhadas, as tensões se somam; se alguma estiver invertida,
+          sua tensão será subtraída do total.
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/associacao_fonte_tensao.png"
+            alt="Figura de uma associação de fontes de tensão em série"
+            width="800px"
+          />
+          <figcaption>
+            No esquema (a), as fontes de tensão estão com a polaridade alinhada
+            e no sentido da corrente, de forma que o valor de todas é somado
+            para se obter o total. No esquema (b), seguindo o sentido da
+            corrente, a fonte da direita está invertida, de forma que seu valor
+            é subtraído do total.
+          </figcaption>
+        </figure>
+        <h3>Divisor de Tensão</h3>
+        <p class="concept">
+          A regra do divisor de tensão estabelece que, em um circuito em série,
+          a tensão total da fonte se divide entre os resistores em proporção
+          direta aos seus valores de resistência. Ou seja, o maior resistor
+          sofrerá a maior queda de tensão.
+        </p>
+        <p class="concept">
+          Essa ferramenta é extremamente útil para a análise de circuitos, pois
+          permite determinar a tensão em um componente específico de forma
+          direta, sem a necessidade de calcular a corrente total do circuito
+          primeiro.
+        </p>
+
+        <p>Princípios fundamentais do Divisor de Tensão:</p>
+        <ul class="standard-list">
+          <li>
+            Aplica-se estritamente a elementos associados em
+            <strong>série</strong>;
+          </li>
+          <li>
+            A tensão sobre um resistor é sempre uma fração da tensão total do
+            circuito;
+          </li>
+          <li>
+            A soma de todas as quedas de tensão divididas é exatamente igual à
+            tensão da fonte (Lei de Kirchhoff para Tensões).
+          </li>
+        </ul>
+
+        <figure class="card-item">
+          <img
+            src="data/circuito_divisor_tensao.png"
+            alt="Circuito para dedução da Fórmula do Divisor de Tensão"
+            width="400px"
+          />
+          <figcaption>
+            Representação de um circuito divisor de tensão. A tensão total
+            aplicada é distribuída através da malha em série. A queda de tensão
+            em um ponto específico de interesse depende da relação entre a
+            resistência daquele ponto e a resistência equivalente total.
+          </figcaption>
+        </figure>
+
+        <figure class="card-item">
+          <img
+            src="data/formula_divisor_tensao.png"
+            alt="Fórmula do Divisor de Tensão"
+            width="400px"
+          />
+          <figcaption>
+            A fórmula matemática do divisor de tensão indica que a tensão
+            procurada em um resistor (<strong>V<sub>Rn</sub></strong
+            >) é igual ao valor de sua própria resistência (<strong
+              >R<sub>n</sub></strong
+            >) dividido pela resistência total da associação em série (<strong
+              >R<sub>T</sub></strong
+            >), multiplicado pela tensão total aplicada (<strong>U</strong>).
+          </figcaption>
+        </figure>
+      </section>
+      <section class="study-card">
+        <h2 class="section-title">Associação Paralela</h2>
+        <p class="concept">Dois elementos estão em paralelo se:</p>
+        <ul class="standard-list">
+          <li>Possuem dois pontos de ligação em comum;</li>
+          <figure>
+            <img
+              width="800px"
+              src="data/associacao_paralela.png"
+              alt="Figura mostrando uma associação em paralelo"
+            />
+          </figure>
+        </ul>
+        <div class="highlight-box">
+          <p>
+            A resistência total de N resistores em paralelo de valor igual é a
+            resistência de um resistor dividida pelo número de resistores em
+            paralelo.
+          </p>
+          <figure class="box-wrapper">
+            <img
+              width="600px"
+              src="data/formula_resistor_igual_paralelo.png"
+              alt="Figura mostrando uma associação em paralelo de resistores"
+            />
+          </figure>
+          <p class="formula">R<sub>T</sub>=R<sub>1</sub>/N</p>
+          <p>
+            E para resistores em paralelo de valores diferentes, a resistência
+            total é a soma dos inversos das resistências.
+          </p>
+          <p>
+            A resistência total de resistores em paralelo é sempre menor que o
+            valor do menor resistor.
+          </p>
+        </div>
+        <p>Regras para associação em paralelo:</p>
+        <ul class="standard-list">
+          <li>
+            A corrente através de cada elemento é uma função de sua resistência
+            terminal;
+          </li>
+          <li>A resistência total é menor que a menor resistência;</li>
+          <li>A tensão em cada elemento paralelo é igual;</li>
+          <li>
+            Potência total é a soma das potências individuais de cada elemento;
+          </li>
+        </ul>
+        <h3>Fontes de Corrente</h3>
+        <p class="concept">
+          Duas ou mais fontes de corrente em paralelo podem ser substituídas por
+          uma única fonte de corrente tendo um valor absoluto determinado pela
+          diferença da soma das correntes em um sentido e a soma no sentido
+          oposto.
+        </p>
+        <figure class="card-item">
+          <img
+            width="800px"
+            src="data/fontes_corrente_paralelo.png"
+            alt="Figura de fontes de corrente em paralelo."
+          />
+          <figcaption>
+            Note que as 3 fontes de corrente em paralelo, com valores de
+            <strong>7</strong>, <strong>3</strong> e <strong>4A</strong> podem
+            ser substituídas por uma única fonte de <strong>8A</strong>, somando
+            as fontes no mesmo sentido, e subtraindo as fontes com sentido
+            contrário. Neste caso, soma os valores de 7A e 4A, e subtrai o valor
+            de 3A, resultando em uma fonte de 8A.
+          </figcaption>
+        </figure>
+        <h3>Fontes de Tensão</h3>
+        <p class="concept">
+          Fontes de tensão podem ser colocadas em paralelo somente se tiverem a
+          mesma tensão.
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/fontes_tensao_paralelo.png"
+            alt="Figura de fontes de tensão em paralelo."
+            width="600px"
+          />
+          <figcaption>
+            Note que o valor da fonte permanece <strong>12V</strong> e a
+            corrente <strong>I<sub>S</sub></strong> agora substitui as correntes
+            <strong>I<sub>1</sub></strong> e <strong>I<sub>2</sub></strong
+            >.
+          </figcaption>
+        </figure>
+        <div class="highlight-box">
+          <p class="concept">
+            Lei de Kirchhoff das correntes:
+            <i>
+              A soma algébrica das correntes que entram e saem de um nó é
+              nula.</i
+            >
+            Ou seja, a mesma corrente total que entra em nó é a mesma corrente
+            total que sai.
+          </p>
+          <p>
+            Para um circuito paralelo, a corrente fornecida pela fonte é igual à
+            soma das correntes dos ramos.
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/circuito_paralelo_kirchhoff.png"
+              alt="Figura de um circuito paralelo"
+            />
+          </figure>
+          Neste circuito, <strong>I</strong> é a soma das correntes dos ramos.
+          <span class="formula"
+            >I = I<sub>1</sub> + I<sub>2</sub> + I<sub>3</sub> + ... + I<sub
+              >N</sub
+            ></span
+          >
+        </div>
+        <h3>Divisor de Corrente</h3>
+        <p class="concept">
+          Metodologia que permite determinar as correntes de um único resistor
+          sem que seja necessário conhecer a tensão total do circuito.
+        </p>
+
+        <p>Caso particular com 2 resistores:</p>
+        <figure class="card-item">
+          <img
+            src="data/circuito_divisor_corrente.png"
+            alt="Circuito para dedução da Fórmula do Divisor de Corrente."
+            width="400px"
+          />
+          <figcaption>
+            <ul class="standard-list">
+              <li>
+                A corrente total I sai da fonte de tensão e viaja pelo fio
+                principal. Quando encontra um nó, essa corrente total precisa de
+                se separar, criando correntes menores para cada ramo (I1, I2,
+                ..., In).
+              </li>
+              <li>
+                A soma de todas as correntes que entram num nó é igual à soma
+                das correntes que saem. Ou seja, a corrente total é exatamente a
+                soma das correntes individuais:I = I1 + I2 + \ + In.
+              </li>
+              <li>
+                A corrente é "preguiçosa". Ela sempre vai preferir o caminho
+                mais fácil. Portanto, o ramo que tiver a menor resistência
+                receberá a maior fatia da corrente total.
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+
+        <figure class="card-item">
+          <img
+            src="data/formula_divisor_corrente.png"
+            alt="Fórmula do Divisor de Tensão"
+            width="350px"
+          />
+        </figure>
+      </section>
+      <section class="study-card">
+        <h2 class="section-title">
+          Elementos em Corrente Alternada e Impedância
+        </h2>
+
+        <h3>O Resistor em Corrente Alternada</h3>
+        <p class="concept">
+          Em elementos puramente resistivos, a tensão e a corrente não sofrem
+          defasagem, ou seja, estão em fase.
+        </p>
+
+        <div class="formula-wrapper">
+          <span class="symbol-text">Tensão:</span>
+          <div class="formula">v<sub>R</sub>(t) = i(t) × R</div>
+        </div>
+        <div class="formula-wrapper">
+          <span class="symbol-text">Impedância:</span>
+          <div class="formula">Z<sub>R</sub> = R</div>
+        </div>
+
+        <figure class="card-item">
+          <img
+            width="800px"
+            src="data/imagem_grafico_resistor.png"
+            alt="Gráfico senoidal e diagrama fasorial do Resistor"
+          />
+          <figcaption>
+            Forma de onda senoidal mostrando V e I em fase. No diagrama
+            fasorial, os vetores de tensão e corrente estão sobrepostos no eixo
+            real.
+          </figcaption>
+        </figure>
+
+        <h3>O Indutor em Corrente Alternada</h3>
+        <p class="concept">
+          Para um indutor, a tensão (<span class="formula">v<sub>L</sub></span
+          >) está <strong>adiantada 90°</strong> em relação à corrente (<span
+            class="formula"
+            >i<sub>L</sub></span
+          >). Alternativamente, diz-se que a corrente está atrasada 90° em
+          relação à tensão.
+        </p>
+
+        <div class="formula-wrapper">
+          <span class="symbol-text">Tensão Indutiva:</span>
+          <div class="formula">v<sub>L</sub>(t) = L × (di<sub>L</sub>/dt)</div>
+        </div>
+        <div class="formula-wrapper">
+          <span class="symbol-text">Reatância Indutiva:</span>
+          <div class="formula">X<sub>L</sub> = ωL ∠ 90° = jX<sub>L</sub></div>
+        </div>
+
+        <figure class="card-item">
+          <img
+            width="800px"
+            src="data/imagem_grafico_indutor.png"
+            alt="Gráfico senoidal e diagrama fasorial do Indutor"
+          />
+          <figcaption>
+            A curva de tensão atinge o seu pico antes da curva de corrente. No
+            diagrama fasorial, o vetor de tensão aponta para cima no eixo
+            imaginário positivo (+90°).
+          </figcaption>
+        </figure>
+
+        <h3>O Capacitor em Corrente Alternada</h3>
+        <p class="concept">
+          Para um capacitor, o comportamento é inverso ao do indutor: a corrente
+          (<span class="formula">i<sub>C</sub></span
+          >) está <strong>adiantada 90°</strong> em relação à tensão (<span
+            class="formula"
+            >v<sub>C</sub></span
+          >).
+        </p>
+
+        <div class="formula-wrapper">
+          <span class="symbol-text">Corrente Capacitiva:</span>
+          <div class="formula">i<sub>C</sub>(t) = C × (dv<sub>C</sub>/dt)</div>
+        </div>
+        <div class="formula-wrapper">
+          <span class="symbol-text">Reatância Capacitiva:</span>
+          <div class="formula">
+            X<sub>C</sub> = (1/ωC) ∠-90° = -jX<sub>C</sub>
+          </div>
+        </div>
+
+        <figure class="card-item">
+          <img
+            width="800px"
+            src="data/imagem_grafico_capacitor.png"
+            alt="Gráfico senoidal e diagrama fasorial do Capacitor"
+          />
+          <figcaption>
+            A curva de corrente atinge o pico antes da tensão. No diagrama
+            fasorial, o vetor da tensão aponta para baixo no eixo imaginário
+            negativo (-90°).
+          </figcaption>
+        </figure>
+
+        <h3>Impedância e Resposta em Frequência</h3>
+        <p class="concept">
+          A <strong>Impedância (Z)</strong> é a razão entre o fasor tensão e o
+          fasor corrente, medida em Ohms (Ω). Ela pode ser representada
+          graficamente no plano complexo:
+        </p>
+
+        <div class="formula-wrapper">
+          <span class="symbol-text">Equação Geral:</span>
+          <div class="formula">Z = R + jX<sub>L</sub> - jX<sub>C</sub></div>
+        </div>
+
+        <ul class="standard-list">
+          <li>
+            <strong>Resistor (R):</strong> Eixo horizontal (Real). O seu valor
+            se mantém constante independente da frequência.
+          </li>
+          <li>
+            <strong>Indutor (X<sub>L</sub>):</strong> Eixo vertical imaginário
+            positivo (+90°). A sua reatância aumenta linearmente à medida que a
+            frequência aumenta.
+          </li>
+          <li>
+            <strong>Capacitor (X<sub>C</sub>):</strong> Eixo vertical imaginário
+            negativo (-90°). A sua reatância diminui exponencialmente à medida
+            que a frequência aumenta.
+          </li>
+        </ul>
+
+        <figure class="card-item">
+          <img
+            width="700px"
+            src="data/imagem_plano_complexo.png"
+            alt="Plano Complexo de Impedância"
+          />
+          <figcaption>
+            Representação das reatâncias e resistência no plano complexo (Eixo
+            Real vs Eixo Imaginário j).
+          </figcaption>
+        </figure>
+
+        <h3>Associação de Impedâncias</h3>
+
+        <div class="examples-section">
+          <h4>Associação em Série</h4>
+          <ul class="standard-list">
+            <li>
+              <strong>Corrente:</strong> É a mesma em todos os componentes
+              (<span class="formula"
+                >I<sub>T</sub> = I<sub>1</sub> = ... = I<sub>N</sub></span
+              >).
+            </li>
+            <li>
+              <strong>Tensão:</strong> Divide-se entre os componentes (<span
+                class="formula"
+                >V<sub>T</sub> = V<sub>1</sub> + ... + V<sub>N</sub></span
+              >).
+            </li>
+            <li>
+              <strong>Impedância Equivalente:</strong> A soma algébrica/complexa
+              direta (<span class="formula"
+                >Z<sub>T</sub> = Z<sub>1</sub> + ... + Z<sub>N</sub></span
+              >).
+            </li>
+            <li>
+              <strong>Divisor de Tensão:</strong> (<span class="formula">
+                V<sub>N</sub> = Z<sub>N</sub> × V<sub>T</sub>/Z<sub
+                  >T</sub
+                ></span
+              >)
+            </li>
+            <figure class="card-item">
+              <img
+                width="800px"
+                src="data/imagem_divisor_tensao_associacao_impedancia.png"
+                alt=""
+              />
+            </figure>
+          </ul>
+        </div>
+
+        <div class="examples-section">
+          <h4>Associação em Paralelo</h4>
+          <ul class="standard-list">
+            <li>
+              <strong>Tensão:</strong> É a mesma sobre todas as ramificações
+              (<span class="formula"
+                >V<sub>T</sub> = V<sub>1</sub> = V<sub>2</sub></span
+              >).
+            </li>
+            <li>
+              <strong>Corrente:</strong> Divide-se entre as ramificações (<span
+                class="formula"
+                >I<sub>T</sub> = I<sub>1</sub> + I<sub>2</sub></span
+              >).
+            </li>
+            <li>
+              <strong>Impedância Equivalente:</strong> O inverso da soma dos
+              inversos (<span class="formula"
+                >1/Z<sub>T</sub> = 1/Z<sub>1</sub>1 + 1/Z<sub>2</sub></span
+              >).
+            </li>
+            <li>
+              <strong>Divisor de Corrente:</strong> (<span class="formula">
+                I<sub>1</sub> = Z<sub>2</sub> × I<sub>T</sub>/(Z<sub>1</sub> +
+                Z<sub>2</sub>)</span
+              >) ou (<span class="formula">
+                I<sub>2</sub> = Z<sub>1</sub> × I<sub>T</sub>/(Z<sub>1</sub> +
+                Z<sub>2</sub>)</span
+              >)
+            </li>
+            <figure class="card-item">
+              <img
+                width="550px"
+                src="data/imagem_divisor_corrente_associacao_impedancia.png"
+                alt=""
+              />
+            </figure>
+          </ul>
+        </div>
+
+        <ul
+          style="
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+          "
+        >
+          <li class="card-item" style="flex: 1 1 300px">
+            <figure>
+              <img
+                src="caminho/para/imagem_circuito_serie.png"
+                alt="Exemplo de Circuito em Série"
+              />
+              <figcaption>
+                Circuito RLC associado em série[cite: 431].
+              </figcaption>
+            </figure>
+          </li>
+          <li class="card-item" style="flex: 1 1 300px">
+            <figure>
+              <img
+                src="caminho/para/imagem_circuito_paralelo.png"
+                alt="Exemplo de Circuito em Paralelo"
+              />
+              <figcaption>
+                Circuito RLC associado em paralelo[cite: 520].
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

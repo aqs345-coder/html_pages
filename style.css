@@ -1,0 +1,373 @@
+/* =========================================
+   VARIÁVEIS GLOBAIS (Design System)
+   ========================================= */
+:root {
+    /* Cores de Fundo */
+    --clr-bg-body: #fffff9;
+    --clr-bg-surface: #ffffff;
+    --clr-bg-alt: #f8f9fa;
+    --clr-bg-example: #eaf2f8;
+    --clr-bg-highlight: #fff3cd;
+    --clr-bg-tag: #eaeded;
+
+    /* Cores de Texto e Destaques */
+    --clr-text-base: #333333;
+    --clr-text-heading: #2c3e50;
+    --clr-text-muted: #7f8c8d;
+    --clr-text-primary: #2980b9;
+    --clr-text-success: #27ae60;
+    --clr-text-warning: #856404;
+
+    /* Cores de Borda */
+    --clr-border-soft: #ecf0f1;
+    --clr-border-base: #e0e0e0;
+    --clr-border-dark: #bdc3c7;
+    --clr-border-primary: #3498db;
+    --clr-border-warning: #ffc107;
+
+    /* Tipografia */
+    --ff-serif: 'Cambria', 'Cochin', 'Georgia', 'Times New Roman', serif;
+    --ff-mono: "Fira Code", monospace;
+
+    /* Espaçamentos Padronizados (1rem = 1px) */
+    --sp-xs: 4rem;
+    --sp-sm: 8rem;
+    --sp-md: 16rem;
+    --sp-lg: 24rem;
+    --sp-xl: 40rem;
+}
+
+/* =========================================
+   RESET E CONFIGURAÇÕES BASE
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 6.25%; /* 1px = 6.25% de 16px. Portanto, 1rem = 1px */
+}
+
+body {
+    background-color: var(--clr-bg-body);
+    font-family: var(--ff-serif);
+    color: var(--clr-text-base);
+    padding: var(--sp-lg);
+    font-size: 18rem;
+    line-height: 1.6;
+    max-width: 1000rem;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* =========================================
+   TIPOGRAFIA
+   ========================================= */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--clr-text-heading);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 32rem;
+    margin-top: var(--sp-xl);
+    margin-bottom: var(--sp-lg);
+}
+
+h2 {
+    font-size: 28rem;
+    margin-top: var(--sp-xl);
+    margin-bottom: var(--sp-md);
+    border-bottom: 1px solid var(--clr-border-soft);
+    padding-bottom: var(--sp-sm);
+}
+
+h3 {
+    font-size: 24rem;
+    margin-top: 32rem;
+    margin-bottom: 12rem;
+}
+
+h4 {
+    font-size: 20rem;
+    margin-top: var(--sp-lg);
+    margin-bottom: var(--sp-sm);
+}
+
+h5 {
+    font-size: 18rem;
+    margin-top: 20rem;
+    margin-bottom: var(--sp-sm);
+}
+
+h6 {
+    font-size: 16rem;
+    margin-top: var(--sp-md);
+    margin-bottom: var(--sp-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--clr-text-muted);
+}
+
+p {
+    margin-bottom: var(--sp-md);
+}
+
+/* =========================================
+   CONTAINERS E ESTRUTURA
+   ========================================= */
+.content-container {
+    max-width: 1000rem;
+    margin: 0 auto;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: var(--sp-xl);
+    padding-bottom: 10rem;
+    border-bottom: 2px solid var(--clr-text-heading);
+}
+
+.main-header h1 {
+    color: var(--clr-text-heading);
+    font-size: 40rem;
+    margin-top: 0;
+}
+
+/* =========================================
+   COMPONENTES DE ESTUDO (Cards e Caixas)
+   ========================================= */
+.study-card {
+    background: var(--clr-bg-surface);
+    border: 1px solid var(--clr-border-base);
+    border-radius: 8px;
+    padding: 25rem;
+    margin-bottom: 30rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    color: var(--clr-text-primary);
+    border-bottom: 1px solid var(--clr-border-soft);
+    padding-bottom: var(--sp-sm);
+    margin-bottom: 15rem;
+}
+
+.concept {
+    font-size: 18rem;
+    margin-bottom: 15rem;
+}
+
+/* Box e Formula Wrapper usam o mesmo estilo visual */
+.box-wrapper,
+.formula-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+    background-color: var(--clr-bg-alt);
+    padding: 15rem;
+    border-radius: 6px;
+    margin-bottom: 15rem;
+}
+
+/* Destaques (como Efeito Joule) */
+.highlight-box {
+    background-color: var(--clr-bg-highlight);
+    border-left: 4px solid var(--clr-border-warning);
+    padding: 15rem;
+    margin: 20rem 0;
+    border-radius: 0 4px 4px 0;
+    color: var(--clr-text-warning);
+}
+
+/* Seção de exemplos */
+.examples-section {
+    background-color: var(--clr-bg-example);
+    padding: 15rem;
+    border-left: 4px solid var(--clr-border-primary);
+    border-radius: 0 6px 6px 0;
+    margin: 20rem 0;
+}
+
+.resolution {
+    background-color: var(--clr-bg-surface);
+    padding: 10rem;
+    margin-top: var(--sp-sm);
+    border: 1px dashed var(--clr-border-dark);
+    font-style: italic;
+    color: var(--clr-text-muted);
+}
+
+/* =========================================
+   IMAGENS E FÓRMULAS
+   ========================================= */
+.formula-image {
+    max-width: 250rem;
+    height: auto;
+}
+
+.formula {
+    font-size: 20rem;
+    font-weight: bold;
+    font-family: var(--ff-mono);
+}
+
+.img-resistor {
+    max-height: 140rem;
+    width: auto;
+}
+
+.symbol-text {
+    font-size: 18rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.block-image {
+    margin: 20rem 0;
+    text-align: center;
+}
+
+/* =========================================
+   LISTAS E GRIDS
+   ========================================= */
+.standard-list {
+    margin-left: 20rem;
+    margin-bottom: 15rem;
+}
+
+.standard-list li {
+    margin-bottom: 5rem;
+}
+
+.example-list {
+    list-style-type: decimal;
+    margin-left: 20rem;
+    margin-top: 10rem;
+}
+
+.example-list li {
+    margin-bottom: 15rem;
+}
+
+.generator-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+    margin-top: 15rem;
+}
+
+.generator-box {
+    background: var(--clr-bg-surface);
+    border: 1px solid var(--clr-border-base);
+    padding: 15rem;
+    border-radius: 6px;
+}
+
+.component-list {
+    list-style: none;
+    margin-top: 15rem;
+}
+
+.component-list li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10rem;
+    background: #f9f9f9;
+    padding: 10rem 100rem;
+    margin-bottom: 10rem;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.element-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220rem, 1fr));
+    gap: 20rem;
+    margin-top: 20rem;
+}
+
+.type-card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 15rem;
+    border-radius: 6px;
+    border-top: 3px solid var(--clr-text-success);
+}
+
+.type-card h4 {
+    margin-bottom: 10rem;
+    color: var(--clr-text-success);
+}
+
+.tags-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-sm);
+    margin-top: 10rem;
+}
+
+.tags-list li {
+    background-color: var(--clr-bg-tag);
+    padding: 4rem 10rem;
+    border-radius: 20px;
+    font-size: 14rem;
+    color: #34495e;
+}
+
+/* =========================================
+   FIGURE E FIGCAPTION (Imagens com Legenda)
+   ========================================= */
+.card-item {
+    padding: 24rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e a legenda horizontalmente */
+    justify-content: center;
+}
+
+
+.card-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: var(--sp-md); /* Corrigido de 1px para 16rem */
+}
+
+.card-item figcaption {
+    text-align: center;
+    font-size: 16rem;
+    line-height: 1.5;
+    color: var(--clr-text-muted);
+}
+
+/* =========================================
+   MEDIA QUERIES (Responsividade)
+   ========================================= */
+@media (max-width: 600px) {
+    .generator-types {
+        grid-template-columns: 1fr;
+    }
+
+    .component-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10rem;
+        padding: 15rem; /* Ajustado para não ficar espremido no mobile */
+    }
+}

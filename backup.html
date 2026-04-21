@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resumo: Análise de Circuitos I</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Elementos de um Circuito</h1>
+    </header>
+
+    <main class="content-container">
+      <section class="study-card">
+        <h2 class="section-title">Tensão Elétrica</h2>
+        <p class="concept">
+          <strong>Conceito:</strong> Força exercida sobre os elétrons livres
+          para que estes se movimentem no interior de um condutor.
+        </p>
+        <div class="box-wrapper">
+          <span class="symbol-text"><strong>Símbolo:</strong> V, E ou U.</span>
+          <figure class="image-container">
+            <img
+              src="data/simbolo_tensao.png"
+              alt="Símbolo de Tensão Elétrica"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Corrente Elétrica</h2>
+        <p class="concept">
+          <strong>Introdução:</strong> Ao ligar dois corpos com cargas elétricas
+          diferentes, há um fluxo de elétrons de um corpo para o outro, a fim de
+          reestabelecer o equilíbrio. Este fluxo de elétrons é denominado
+          <strong>corrente elétrica</strong>.
+        </p>
+        <div class="box-wrapper">
+          <span class="symbol-text"><strong>Símbolo:</strong> I.</span>
+          <figure class="image-container">
+            <img
+              src="data/simbolo_corrente.png"
+              alt="Símbolo de Corrente Elétrica"
+            />
+          </figure>
+        </div>
+        <p class="concept">
+          A <strong>intensidade de corrente elétrica</strong> é o número de
+          cargas elétricas que passam por segundo em um determinado ponto.
+        </p>
+        <div class="formula-wrapper">
+          <p class="formula">1A = 1C/s = (6,25 x 10<sup>18</sup>e) / 1s -></p>
+          <figure>
+            <img
+              class="formula-image"
+              src="data/limite_corrente.png"
+              alt="Cálculo do limite de corrente"
+            />
+          </figure>
+        </div>
+
+        <article class="examples-section">
+          <h3>Exemplos práticos:</h3>
+          <ul class="example-list">
+            <li>
+              <p>
+                Se uma corrente de 2A passar através de um medidor durante um
+                minuto, isso equivale a quantos Coulombs?
+              </p>
+              <div class="resolution">Resolução 1</div>
+            </li>
+            <li>
+              <p>
+                Durante 45 segundos uma secção de um condutor foi atravessada
+                por 9x10<sup>20</sup> elétrons. Qual a intensidade média de
+                corrente elétrica?
+              </p>
+              <div class="resolution">Resolução 2</div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="sub-topic">
+          <h3>Corrente Contínua (CC) e Corrente Alternada (CA)</h3>
+          <p>
+            Um gerador de tensão é um dispositivo que mantém, por meio de uma
+            ação química, mecânica ou outra qualquer, uma tensão entre dois
+            polos, para que assim o deslocamento das cargas elétricas ocorra.
+          </p>
+
+          <ul class="standard-list">
+            <li><strong>Químico:</strong> Pilha</li>
+            <li><strong>Mecânico:</strong> Gerador Eólico</li>
+            <li><strong>Solar:</strong> Painéis Solares</li>
+          </ul>
+
+          <div class="generator-types">
+            <div class="generator-box">
+              <h4>Geradores de Tensão Constante</h4>
+              <p>
+                Corrente de sentido e intensidade constantes no decorrer do
+                tempo.
+              </p>
+              <ul class="standard-list">
+                <li>Pilhas</li>
+                <li>Baterias</li>
+                <li>Painéis solares</li>
+              </ul>
+            </div>
+            <div class="generator-box">
+              <h4>Geradores de Tensão Alternada</h4>
+              <p>
+                Corrente de sentido e intensidade variadas no decorrer do tempo.
+              </p>
+              <ul class="standard-list">
+                <li>Hidrelétricas</li>
+                <li>Termelétricas</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Resistência Elétrica</h2>
+        <p class="concept">
+          <strong>Conceito:</strong> Oposição encontrada pela corrente elétrica
+          ao percorrer um material.
+        </p>
+        <ul class="standard-list">
+          <li>
+            Quanto mais elétrons livres possui o material, menor sua
+            resistência.
+          </li>
+          <li>
+            A resistência depende das dimensões físicas e do tipo do material.
+          </li>
+        </ul>
+        <div class="box-wrapper">
+          <span class="symbol-text"><strong>Símbolo:</strong> R.</span>
+          <figure class="image-container">
+            <img
+              src="data/simbolo_resistencia.png"
+              alt="Símbolo de Resistência Elétrica"
+            />
+          </figure>
+        </div>
+
+        <article class="sub-topic">
+          <h3>Resistores</h3>
+          <ul class="standard-list">
+            <li>
+              Dispositivos fabricados para fazerem uso de sua resistência
+              elétrica.
+            </li>
+            <li>
+              Amplamente utilizados na eletrônica e eletricidade em diferentes
+              circuitos.
+            </li>
+            <li>
+              O chuveiro elétrico e o ferro elétrico são equipamentos que
+              utilizam a resistência elétrica para transformar energia elétrica
+              em energia térmica (calor).
+            </li>
+          </ul>
+
+          <div class="highlight-box">
+            <p>
+              <strong>Efeito Joule:</strong> É a transformação de energia
+              elétrica em energia térmica. O aquecimento é provocado pela maior
+              vibração dos átomos. É devido a esse efeito que a lâmpada de
+              filamento emite luz. O efeito Joule também é responsável pelo
+              consumo de energia elétrica do circuito, quando essa energia se
+              transforma em calor.
+            </p>
+          </div>
+
+          <h4>Principais tipos de resistores:</h4>
+          <ul class="component-list">
+            <li>
+              <strong>Fixos:</strong> Valor da resistência não pode ser
+              alterado.
+              <figure>
+                <img
+                  class="img-resistor"
+                  src="data/resistor_fixo.png"
+                  alt="Resistor Fixo"
+                />
+              </figure>
+            </li>
+            <li>
+              <strong>Ajustáveis:</strong> Valor da resistência pode ser
+              alterado uma única vez.
+              <figure>
+                <img
+                  class="img-resistor"
+                  src="data/resistor_ajustavel.png"
+                  alt="Resistor Ajustável"
+                />
+              </figure>
+            </li>
+            <li>
+              <strong>Variáveis:</strong> Valor da resistência pode ser alterado
+              continuamente.
+              <figure>
+                <img
+                  class="img-resistor"
+                  src="data/resistor_variavel.png"
+                  alt="Resistor Variável"
+                />
+              </figure>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Lei de OHM</h2>
+        <p class="concept">
+          A <strong>Lei de Ohm</strong> afirma que, para um condutor mantido à
+          temperatura constante, a razão entre a tensão entre dois pontos e a
+          corrente elétrica é constante. Essa constante é denominada de
+          resistência elétrica.
+        </p>
+        <figure class="image-container block-image">
+          <img src="data/lei_de_ohm.png" alt="Fórmula da Lei de Ohm" />
+        </figure>
+        <div class="info-box">
+          <p><strong>Tensão e sentido da Corrente em um resistor:</strong></p>
+          <figure class="image-container">
+            <img
+              src="data/tensao_sentido_corrente.png"
+              alt="Sentido da corrente e tensão no resistor"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Potência Elétrica</h2>
+        <p class="concept">
+          O termo é aplicado para fornecer uma indicação de quantidade de
+          trabalho que pode ser realizado em um determinado período de tempo.
+          <strong
+            >Potência é a velocidade com que um trabalho é executado.</strong
+          >
+        </p>
+        <div class="formula-group">
+          <p><strong>Cálculo de potência:</strong></p>
+          <figure class="image-container">
+            <img
+              src="data/calculo_potencia.png"
+              alt="Cálculo básico de potência"
+            />
+          </figure>
+          <figure class="image-container">
+            <img
+              src="data/formulas_potencia.png"
+              alt="Variações da fórmula de potência"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Elementos Passivos e Ativos</h2>
+        <p class="concept">
+          Os elementos de um circuito podem ser classificados em relação à forma
+          como conduzem eletricidade em 3 grupos:
+        </p>
+        <ul class="standard-list">
+          <li>Passivos;</li>
+          <li>Ativos;</li>
+          <li>Eletromecânicos.</li>
+        </ul>
+
+        <div class="element-types">
+          <div class="type-card">
+            <h4>Passivos</h4>
+            <p>
+              Todos os componentes que não aumentam a intensidade de uma
+              corrente ou tensão de um circuito. Não geram energia; eles apenas
+              interagem com a energia, dissipando-a. Não geram ganho nem
+              direcionam a corrente, embora possam retardá-la ou armazená-la.
+            </p>
+            <ul class="tags-list">
+              <li>Resistores</li>
+              <li>Capacitores</li>
+              <li>Indutores</li>
+            </ul>
+          </div>
+
+          <div class="type-card">
+            <h4>Ativos</h4>
+            <p>
+              São capazes de gerar energia e também podem manipular a direção da
+              corrente dentro do circuito. Estes componentes são dispositivos
+              que fornecem ganho à corrente ou a direcionam.
+            </p>
+            <ul class="tags-list">
+              <li>Diodos</li>
+              <li>Transistores</li>
+              <li>Fontes de Energia</li>
+            </ul>
+          </div>
+
+          <div class="type-card">
+            <h4>Eletromecânicos</h4>
+            <p>
+              São todos aqueles que envolvem algum movimento mecânico,
+              combinando processos elétricos e mecânicos em um único
+              dispositivo.
+            </p>
+            <ul class="tags-list">
+              <li>Relés</li>
+              <li>Cristal</li>
+              <li>Chaves</li>
+              <li>Motores</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">Ondas em Circuitos CA</h2>
+
+        <p class="concept">
+          <strong>Informação Prévia:</strong> Os conceitos básicos e os
+          elementos de uma onda devem estar bem consolidados no seu
+          conhecimento. Você deve saber o que é e como calcular: Frequência,
+          Período, Amplitude, Velocidade Angular e o Valor Instantâneo de uma
+          onda.
+        </p>
+        <p class="concept">
+          O que será aprofundado aqui é o conceito de
+          <strong>Tensão Eficaz</strong> e, posteriormente, o
+          <strong>Adianto ou Atraso de Corrente (Defasagem)</strong>.
+        </p>
+
+        <article class="sub-topic">
+          <h3>Tensão Eficaz (Valor RMS)</h3>
+
+          <p>
+            Em um circuito de corrente alternada (CA), o valor da tensão varia
+            continuamente ao longo do tempo, formando uma onda senoidal que
+            atinge picos positivos e negativos. Como a tensão não é constante,
+            medir o "trabalho real" que essa onda consegue realizar exige um
+            referencial. É aí que entra a <strong>Tensão Eficaz</strong>, também
+            conhecida como <strong>Tensão RMS</strong> (do inglês
+            <em>Root Mean Square</em>, ou Valor Quadrático Médio).
+          </p>
+
+          <div class="highlight-box">
+            <p>
+              <strong>A Equivalência CA e CC:</strong> A Tensão Eficaz de um
+              sinal alternado é exatamente igual ao valor de uma
+              <strong>tensão contínua (CC)</strong> que produziria a
+              <strong>mesma dissipação de potência (calor)</strong> em um mesmo
+              resistor.
+            </p>
+          </div>
+
+          <p>
+            <strong>Na prática:</strong> Se você ligar um aquecedor a uma tomada
+            de tensão alternada com 220V RMS, ele vai esquentar exatamente o
+            mesmo tanto que esquentaria se fosse ligado a uma grande bateria de
+            tensão contínua de exatos 220V.
+          </p>
+
+          <p>
+            Para ondas perfeitamente senoidais, o cálculo do valor eficaz é
+            feito dividindo o valor de pico (a amplitude máxima da onda) pela
+            raiz quadrada de 2.
+          </p>
+
+          <div class="box-wrapper">
+            <span class="symbol-text"><strong>Cálculo:</strong></span>
+            <figure class="image-container">
+              <img
+                src="data/formula_tensao_eficaz.png"
+                alt="Fórmula matemática da Tensão Eficaz (RMS)"
+              />
+            </figure>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

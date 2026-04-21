@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia de Estilos - Sistema de Aulas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="content-container">
+      <header class="main-header">
+        <h1>Guia de Estilos & Componentes</h1>
+        <p>Documentação prática das classes CSS do projeto.</p>
+      </header>
+
+      <section class="study-card">
+        <h2 class="section-title">1. Tipografia Básica e Textos</h2>
+
+        <h1>Título H1 (Títulos Principais)</h1>
+        <h2>Título H2 (Início de Grandes Seções)</h2>
+        <h3>Título H3 (Subtópicos)</h3>
+        <h4>Título H4 (Subdivisões menores)</h4>
+        <h5>Título H5 (Tópicos de rodapé ou notas)</h5>
+        <h6>Título H6 (Rótulos e Metadados)</h6>
+
+        <p>
+          Este é um parágrafo normal <code>&lt;p&gt;</code>. A tipografia
+          baseada em 18px garante uma leitura muito confortável em textos
+          longos. O espaçamento de linha (line-height) evita que o texto pareça
+          um bloco denso de informação.
+        </p>
+
+        <p class="concept">
+          Esta é a classe <strong>.concept</strong>. Útil para resetar o tamanho
+          da fonte para o padrão do body quando você estiver dentro de caixas
+          que alteram tamanhos, ou para destacar conceituações importantes.
+        </p>
+
+        <aside class="highlight-box">
+          <strong>Atenção (highlight-box):</strong> Este bloco é perfeito para
+          criar avisos de segurança, alertas de erros comuns dos alunos ou dicas
+          cruciais, como a Lei de Ohm!
+        </aside>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">2. Caixas de Fórmulas e Wrappers</h2>
+        <p>
+          Use a classe <code>.formula-wrapper</code> ou
+          <code>.box-wrapper</code> para centralizar informações cruciais lado a
+          lado em uma caixa cinza elegante.
+        </p>
+
+        <div class="formula-wrapper">
+          <span class="symbol-text">Lei de Ohm:</span>
+          <div class="formula">V = R · I</div>
+        </div>
+
+        <div class="box-wrapper">
+          <img
+            src="https://placehold.co/600x400?text=Hello+World"
+            alt="Diagrama"
+            class="img-resistor"
+          />
+          <p>
+            Nesta caixa, combinamos uma imagem pequena usando a classe
+            <code>.img-resistor</code> com um texto explicativo ao lado.
+          </p>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">3. Exercícios e Resoluções</h2>
+
+        <div class="examples-section">
+          <h3>Exemplos Práticos (.examples-section)</h3>
+          <p>Resolva os problemas abaixo baseando-se na teoria apresentada.</p>
+
+          <ol class="example-list">
+            <li>
+              Calcule a corrente de um circuito com V = 12V e R = 4Ω.
+              <div class="resolution">
+                <strong>Resolução:</strong> Aplicando I = V/R, temos I = 12/4.
+                Portanto, a corrente é de 3 Amperes (3A).
+              </div>
+            </li>
+            <li>
+              Determine a potência dissipada.
+              <div class="resolution">
+                <strong>Resolução:</strong> P = V · I -> P = 12 · 3 = 36W.
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">4. Layouts em Grade (Grids)</h2>
+
+        <h3>Tipos de Geradores (.generator-types)</h3>
+        <p>O grid abaixo quebra para 1 coluna no celular e 2 no computador.</p>
+        <div class="generator-types">
+          <div class="generator-box">
+            <h4>Gerador Corrente Contínua (CC)</h4>
+            <p>
+              Mantém a polaridade constante ao longo do tempo. Ex: Pilhas e
+              Baterias.
+            </p>
+          </div>
+          <div class="generator-box">
+            <h4>Gerador Corrente Alternada (CA)</h4>
+            <p>
+              A polaridade inverte periodicamente. Ex: Tomadas residenciais.
+            </p>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 40px">Elementos do Circuito (.element-types)</h3>
+        <p>Cards com borda superior verde e lista de tags inclusa.</p>
+        <div class="element-types">
+          <div class="type-card">
+            <h4>Elementos Ativos</h4>
+            <p>Fornecem energia elétrica ao circuito.</p>
+            <ul class="tags-list">
+              <li>Bateria</li>
+              <li>Gerador</li>
+              <li>Fonte</li>
+            </ul>
+          </div>
+          <div class="type-card">
+            <h4>Elementos Passivos</h4>
+            <p>Consomem ou armazenam energia elétrica.</p>
+            <ul class="tags-list">
+              <li>Resistor</li>
+              <li>Capacitor</li>
+              <li>Indutor</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="study-card">
+        <h2 class="section-title">5. Listas e Imagens Técnicas</h2>
+
+        <h3>Lista de Componentes (.component-list)</h3>
+        <ul class="component-list">
+          <li>
+            <strong>Resistor</strong>
+            <span>Limita a corrente elétrica</span>
+          </li>
+          <li>
+            <strong>Capacitor</strong>
+            <span>Armazena carga no campo elétrico</span>
+          </li>
+        </ul>
+
+        <h3 style="margin-top: 40px">
+          Imagens com Legenda (Figure e Figcaption)
+        </h3>
+        <p>
+          Usando a classe <code>.card-item</code> para agrupar gráficos de forma
+          que eles nunca quebrem o layout.
+        </p>
+
+        <ul style="list-style: none; padding: 0">
+          <li class="card-item">
+            <figure>
+              <img
+                src="https://via.placeholder.com/600x300?text=Grafico+Seno+Atrasado"
+                alt="Gráfico de curva atrasada"
+              />
+              <figcaption>
+                Diz-se que a curva que representa o seno está
+                <strong>atrasada</strong> de 90º em relação à curva do cosseno.
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
