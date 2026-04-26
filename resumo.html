@@ -1014,6 +1014,193 @@
           </ul>
         </div>
       </section>
+      <section class="study-card">
+        <h2 class="section-title">Números Complexos</h2>
+        <p class="concept">
+          Em algumas análises de circuitos em corrente contínua, foi necessário
+          realizar soma algébrica de tensões e de correntes. Para realizar estas
+          operações em corrente alternada, utilizamos números complexos.
+        </p>
+        <h3>O Valor de √-1</h3>
+        <p class="concept">
+          Na matemática pura, a raiz quadrada de -1 é conhecida como a unidade
+          imaginária e é representada pela letra <strong>i</strong>. No entanto,
+          na Engenharia Elétrica, a letra <em>i</em> já é universalmente
+          consagrada para representar a
+          <strong>corrente elétrica instantânea</strong>. Adotamos a letra
+          <strong>j</strong> para representar a unidade imaginária (<strong
+            >j = √-1</strong
+          >).
+        </p>
+        <p class="concept">
+          <strong>Mas por que usar números complexos?</strong> Em circuitos de
+          Corrente Alternada, as grandezas não possuem apenas uma intensidade,
+          mas também sofrem um deslocamento no tempo devido ao atraso ou
+          adiantamento provocado por indutores e capacitores. Os números
+          complexos são a ferramenta matemática perfeita para isso, pois
+          conseguem guardar essas duas informações dentro de um único elemento,
+          chamado de <strong>Fasor</strong>.
+        </p>
+        <p class="concept">
+          O uso do operador <strong>j</strong> nos permite tratar os circuitos
+          de CA no plano cartesiano. Graças a essa conversão, podemos resolver
+          circuitos complexos de Corrente Alternada utilizando as exatas mesmas
+          regras matemáticas simples da Corrente Contínua, como a Lei de Ohm e
+          as Leis de Kirchhoff.
+        </p>
+        <p class="concept">
+          Durante as análises, será encontrado potências de <strong>j</strong>,
+          para tal, segue a tabela abaixo. Perceba que as potências seguem uma
+          ordenação:
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/tabela_j.png"
+            alt="Tabela de potências de j"
+            width="600px"
+          />
+        </figure>
+        <h3>Forma Retangular</h3>
+        <p class="concept">
+          Um número complexo pode ser representado por um ponto em um plano. Uma
+          forma de representação é a Forma Retangular, de fórmula:
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/formula_forma_retangular.png"
+            alt="Fórmula da Forma Retangular"
+            width="700px"
+          />
+        </figure>
+        <p class="concept">
+          Que representa os dois eixos cartesianos da seguinte forma:
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/plano_cartesiano_forma_retangular.png"
+            alt="Plano Cartesiano da Forma Retangular"
+            width="600px"
+          />
+        </figure>
+        <h3>Forma Polar</h3>
+        <p class="concept">
+          Outra forma de representação é a Forma Polar, que utiliza o módulo do
+          valor e o ângulo de defasagem, sempre medido no sentido anti-horário a
+          partir do eixo real positivo, para representar um número complexo. A
+          fórmula é a seguinte:
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/formula_forma_polar.png"
+            alt="Fórmula da Forma Polar"
+            width="500px"
+          />
+        </figure>
+        <p class="concept">
+          Que representa os dois eixos cartesianos da seguinte forma:
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/plano_cartesiano_forma_polar.png"
+            alt="Plano Cartesiano da Forma Retangular"
+            width="600px"
+          />
+        </figure>
+        <h3>Conversão Entre as Formas</h3>
+        <p class="concept">
+          Para converter um número retangular em polar, usamos as seguintes
+          equações:
+        </p>
+        <figure class="card-item standard-list">
+          <img
+            src="data/formula_retangular_para_polar1.png"
+            alt="Fórmula de conversão de retangular para polar 1"
+            width="400px"
+          />
+          <img
+            src="data/formula_retangular_para_polar2.png"
+            alt="Fórmula de conversão de retangular para polar 2"
+            width="400px"
+          />
+        </figure>
+        <p class="concept">
+          Para converter um número polar em retangular, usamos as seguintes
+          equações:
+        </p>
+        <figure class="card-item standard-list">
+          <img
+            src="data/formula_polar_para_retangular.png"
+            alt="Fórmula de conversão de polar para retangular"
+            width="400px"
+          />
+        </figure>
+        <h3>Operações Matemáticas</h3>
+        <p class="concept">
+          Para realizar operações matemáticas com números complexos, é
+          fundamental escolher a forma de representação mais adequada. A forma
+          polar não é conveniente para efetuar adições e subtrações. Portanto,
+          utilizamos a forma retangular para adição e subtração, e a forma polar
+          para facilitar a multiplicação e a divisão.
+        </p>
+
+        <article class="examples-section">
+          <h4>Adição e Subtração (Forma Retangular)</h4>
+          <p class="concept">
+            Para adicionar ou subtrair números complexos, basta operar
+            separadamente as partes reais e as partes imaginárias.
+            <br /><br />
+            <strong>Adição:</strong> C<sub>1</sub> + C<sub>2</sub> = (A<sub
+              >1</sub
+            >
+            + A<sub>2</sub>) + j(B<sub>1</sub> + B<sub>2</sub>)
+            <figure class="card-item">
+              <img
+                src="data/adicao_retangular.png"
+                alt="Representação gráfica de soma e subtração vetorial"
+                width="600px"
+              />
+            </figure>
+            <strong>Subtração:</strong>C<sub>1</sub> - C<sub>2</sub> = (A<sub
+              >1</sub
+            >
+            - A<sub>2</sub>) + j(B<sub>1</sub> - B<sub>2</sub>)
+            <figure class="card-item">
+              <img
+                src="data/subtracao_retangular.png"
+                alt="Representação gráfica de soma e subtração vetorial"
+                width="600px"
+              />
+            </figure>
+          </p>
+        </article>
+
+        <article class="examples-section">
+          <h4>Mutiplicação e Divisão (Forma Polar)</h4>
+          <p class="concept">
+            Na forma polar, a multiplicação e a divisão tornam-se operações
+            muito mais diretas.
+            <br /><br />
+            <strong>Multiplicação:</strong> Multiplica-se os módulos e soma-se
+            os ângulos.
+            <figure class="card-item">
+              <img
+                src="data/multiplicacao_polar.png"
+                alt="Representação gráfica de multiplicação polar."
+                width="600px"
+              />
+            </figure>
+            <strong>Subtração:</strong> Divide-se o módulo do numerador pelo
+            módulo do denominador e subtrai-se as respectivas fases.
+            <figure class="card-item">
+              <img
+                src="data/multiplicacao_polar.png"
+                alt="Representação gráfica de divisão polar."
+                width="600px"
+              />
+            </figure>
+          </p>
+        </article>
+      </section>
     </main>
   </body>
 </html>
