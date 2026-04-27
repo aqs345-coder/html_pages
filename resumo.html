@@ -1393,6 +1393,96 @@
           </ul>
         </article>
       </section>
+      <section class="study-card">
+        <h2 class="section-title">
+          Fontes Dependentes e Transformação de Fontes
+        </h2>
+
+        <p class="concept">
+          <strong>Fontes Independentes vs. Dependentes:</strong><br />
+          Enquanto uma fonte independente fornece um valor fixo de tensão ou
+          corrente, independentemente do que acontece no resto do circuito, uma
+          fonte dependente atua de forma diferente. O valor de tensão ou
+          corrente que ela fornece "depende" diretamente de uma tensão ou
+          corrente medida em outro ponto específico do mesmo circuito. Elas são
+          representadas por losangos nos diagramas e são essenciais para modelar
+          o comportamento de componentes ativos, como transistores e
+          amplificadores operacionais.
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/fontes_dependentes.png"
+            alt="Fontes dependentes"
+            width="800px"
+          />
+        </figure>
+
+        <article class="sub-topic">
+          <h3>Transformação de Fontes</h3>
+          <p>
+            Assim como nas fontes independentes, podemos simplificar a análise
+            do circuito aplicando o método de
+            <strong>Transformação de Fontes</strong>. A regra topológica
+            fundamental é:
+          </p>
+          <ul class="standard-list">
+            <li>
+              Um modelo prático de <strong>Fonte de Tensão</strong> é composto
+              por uma fonte ideal com uma impedância conectada em
+              <strong>série</strong>.
+            </li>
+            <li>
+              Um modelo prático de <strong>Fonte de Corrente</strong> é composto
+              por uma fonte ideal com uma impedância conectada em
+              <strong>paralelo</strong>.
+            </li>
+          </ul>
+          <figure class="card-item">
+            <img
+              src="data/fonte_tensao_e_corrente.png"
+              alt="Fontes de tensão e corrente"
+              width="700px"
+            />
+          </figure>
+          <p>
+            A conversão matemática entre elas obedece à Lei de Ohm ($E = I \cdot
+            Z$). Porém, ao realizar a conversão envolvendo fontes dependentes,
+            jamais podemos absorver ou alterar o componente onde está a variável
+            que controla a fonte, caso contrário, a fonte dependente perde sua
+            referência matemática e o circuito fica inválido.
+          </p>
+        </article>
+
+        <div class="highlight-box">
+          <p>
+            Um conceito crucial para a análise de circuitos é entender o que
+            ocorre com a fonte dependente quando sua variável de controle ($V_x$
+            ou $I_x$) atinge zero:
+          </p>
+          <ul class="standard-list" style="margin-top: 10px; margin-bottom: 0">
+            <li>
+              Se for uma fonte de tensão dependente e a variável de controle for
+              zero, ela fornecerá $0V$. Na prática, uma diferença de potencial
+              de 0V entre dois pontos significa que eles estão no mesmo
+              potencial, ou seja, a fonte passa a se comportar como um
+              curto-circuito.
+            </li>
+            <li>
+              Se for uma fonte de corrente dependente e a variável de controle
+              for zero, ela fornecerá $0A$. A ausência total de fluxo de
+              elétrons significa que a fonte passa a se comportar como um
+              circuito aberto.
+            </li>
+          </ul>
+          <figure class="card-item">
+            <img
+              src="data/fontes_dependentes_zeros.png"
+              alt="Fontes dependentes em zero"
+              width="700px"
+            />
+          </figure>
+        </div>
+      </section>
     </main>
   </body>
 </html>
