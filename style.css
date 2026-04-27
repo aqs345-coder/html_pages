@@ -298,6 +298,7 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(220rem, 1fr));
     gap: 20rem;
     margin-top: 20rem;
+    margin-bottom: 10px;
 }
 
 .type-card {

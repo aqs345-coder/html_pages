@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ["$", "$"],
+          ["\\(", "\\)"],
+        ],
+        displayMath: [
+          ["$$", "$$"],
+          ["\\[", "\\]"],
+        ],
+      },
+      output: {
+        // Define a nova fonte matemática global
+        // Tente também: 'mathjax-fira' (sem serifa), 'mathjax-pagella' ou 'mathjax-asana'
+        font: "mathjax-pagella",
+        scale: 1.5,
+      },
+      chtml: {
+        // Faz com que palavras comuns dentro da equação usem a fonte do seu site (Cambria)
+        mtextInheritFont: true,
+      },
+    };
+  </script>
+
+  <script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"
+  ></script>
+
   <body>
     <header class="main-header">
       <h1>Elementos de um Circuito</h1>
@@ -1262,6 +1293,105 @@
             </figcaption>
           </figure>
         </div>
+      </section>
+      <section class="study-card">
+        <h2 class="section-title">Conversões de Circuitos</h2>
+        <p class="concept">
+          Na análise de circuitos elétricos, frequentemente encontramos
+          componentes interligados de maneiras que não estão nem em série nem em
+          paralelo simples. Nesses cenários, destacam-se quatro topologias
+          clássicas de redes de três terminais. A grande sacada aqui é entender
+          que, topologicamente, essas quatro configurações se resumem a
+          <strong>apenas duas arquiteturas equivalentes</strong>.
+        </p>
+        <div class="element-types">
+          <div class="type-card">
+            <h4>Estrela (Y) e T</h4>
+            <p>
+              Na configuração <strong>Estrela</strong> três elementos de
+              circuito se conectam a um único <strong>nó central comum</strong>.
+            </p>
+            <p>
+              Quando essa exata mesma topologia geométrica é desenhada de forma
+              mais "quadrada" ou ortogonal nos esquemas, ela assume a forma da
+              letra <strong>T</strong>.
+            </p>
+            <ul class="tags-list">
+              <li>Redes Y e T são idênticas</li>
+              <li>Possuem nó central comum</li>
+              <li>Típico em sistemas trifásicos</li>
+            </ul>
+          </div>
+
+          <div class="type-card">
+            <h4>Delta (∆) e Pi (π)</h4>
+            <p>
+              Na configuração <strong>Delta</strong> três elementos são
+              conectados ponta a ponta, formando um
+              <strong>laço fechado</strong> (um triângulo).
+            </p>
+            <p>
+              Assim como no caso anterior, se você "esticar" a base desse
+              triângulo para facilitar o desenho no papel, o circuito assumirá o
+              formato da letra grega <strong>Pi</strong>.
+            </p>
+            <ul class="tags-list">
+              <li>Redes Delta e Pi são idênticas</li>
+              <li>Laço fechado (sem nó central)</li>
+              <li>Alta confiabilidade de malha</li>
+            </ul>
+          </div>
+        </div>
+        <figure class="card-item">
+          <img
+            src="data/circuito_estrela.png"
+            alt="Ponte de Maxwell"
+            width="800px"
+          />
+        </figure>
+        <figure class="card-item">
+          <img
+            src="data/circuito_triangulo.png"
+            alt="Ponte de Maxwell"
+            width="800px"
+          />
+        </figure>
+        <h3>Conversões Delta-Y e Y-Delta</h3>
+        <p class="concept">
+          Partindo deste circuito que integra tanto Delta quanto Y, abaixo vemos
+          as equações de conversão.
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/circuito_delta_estrela.png"
+            alt="Equações de conversão Delta-Y"
+            width="400px"
+          />
+        </figure>
+        <article class="examples-section">
+          <h4>Conversão Delta-Y</h4>
+          <p class="concept">Para esta conversão, utilizamos estas equações:</p>
+          <ul class="component-list">
+            <li>$Z_1 = \frac{Z_b \cdot Z_c}{Z_a + Z_b + Z_c}$</li>
+            <li>$Z_2 = \frac{Z_a \cdot Z_c}{Z_a + Z_b + Z_c}$</li>
+            <li>$Z_3 = \frac{Z_a \cdot Z_b}{Z_a + Z_b + Z_c}$</li>
+          </ul>
+        </article>
+        <article class="examples-section">
+          <h4>Conversão Y-Delta</h4>
+          <p class="concept">Para esta conversão, utilizamos estas equações:</p>
+          <ul class="component-list">
+            <li>
+              $Z_A = \frac{Z_1 \cdot Z_2 + Z_1 \cdot Z_3 + Z_2 \cdot Z_3}{Z_1}$
+            </li>
+            <li>
+              $Z_B = \frac{Z_1 \cdot Z_2 + Z_1 \cdot Z_3 + Z_2 \cdot Z_3}{Z_2}$
+            </li>
+            <li>
+              $Z_C = \frac{Z_1 \cdot Z_2 + Z_1 \cdot Z_3 + Z_2 \cdot Z_3}{Z_3}$
+            </li>
+          </ul>
+        </article>
       </section>
     </main>
   </body>

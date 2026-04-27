@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resumo com Equações</title>
+
+    <script>
+      MathJax = {
+        tex: {
+          // Permite usar o símbolo de cifrão único para equações na mesma linha
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+          // Permite usar cifrão duplo para equações em bloco (centralizadas)
+          displayMath: [
+            ["$$", "$$"],
+            ["\\[", "\\]"],
+          ],
+        },
+      };
+    </script>
+
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+    ></script>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Equações na mesma linha (Inline)</h2>
+    <p>
+      Para escrever uma fórmula no meio do texto, basta envolvê-la com um único
+      cifrão. Por exemplo, a Lei de Ohm é dada por $V = R \cdot I$. Viu como ela
+      fica na mesma linha?
+    </p>
+
+    <h2>Equações em Bloco (Display)</h2>
+    <p>
+      Para fórmulas maiores ou mais importantes, use dois cifrões. O MathJax vai
+      quebrar a linha e centralizar a equação automaticamente:
+    </p>
+
+    $$ Z = \sqrt{R^2 + (X_L - X_C)^2} $$
+
+    <p>Outro exemplo com frações e ângulos para a sua matéria de circuitos:</p>
+
+    $$ \theta = \tan^{-1}\left(\frac{X_L - X_C}{R}\right) $$
+  </body>
+</html>
