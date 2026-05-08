@@ -1483,6 +1483,277 @@
           </figure>
         </div>
       </section>
+      <section class="study-card">
+        <h2 class="section-title">
+          Potência em Circuitos de Corrente Alternada
+        </h2>
+        <p class="concept">
+          Tanto a tensão quanto a corrente variam em função do tempo em
+          circuitos CA. O que significa que, antes, onde tínhamos um valor fixo
+          para Potência, Tensão e Corrente em corrente contínua, agora temos
+          funções de Potência, Tensão e Corrente.
+        </p>
+        <div class="examples-section">
+          <ul class="component-list">
+            <li>$P = V \cdot I$, para CC</li>
+            <li>$P(t) = V(t) \cdot I(t) $, para CA</li>
+          </ul>
+        </div>
+        <article class="sub-topic">
+          <h3>Potência no Resistor</h3>
+          <p class="concept">
+            A corrente e a tensão sempre estão em fase neste dispositivo,
+            portanto a potência no resistor sempre é consumida, ou dissipada.
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/potencia_resistor_ca.png"
+              alt="Diagrama de potência em um resistor em CA"
+              width="600px"
+            />
+            <figcaption>
+              Perceba que nenhuma potência é devolvida à fonte pelo resistor.
+              Como tensão e corrente sempre estão em fase (positivo - positivo,
+              ou negativo - negativo), o produto da tensão pela corrente sempre
+              é positivo. Sua unidade de medida é Watt (W).
+            </figcaption>
+          </figure>
+          E pode ser calculada por:
+          <figure class="card-item">
+            <img
+              src="data/potencia_resistor_ca_formula.png"
+              alt="Diagrama de potência em um resistor em CA"
+              width="400px"
+            />
+          </figure>
+        </article>
+        <article class="sub-topic">
+          <h3>Potência no Indutor</h3>
+          <p class="concept">
+            A corrente e a tensão estão em defasagem, de modo que ao longo dos
+            ciclos, o produto da tensão pela corrente pode ser negativo. No
+            geral, a potência média de um indutor é zero, a troca de potência
+            entre uma fonte e uma carga puramente indutiva é zero. Lembrando que
+            o indutor é um dispositivo que atrasa a corrente em relação à
+            tensão. Perceba no diagrama abaixo.
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/potencia_indutor_ca.png"
+              alt="Diagrama de potência em um indutor em CA"
+              width="600px"
+            />
+            <figcaption>
+              Veja que o indutor atrasa a corrente em 90° em relação à tensão, e
+              que ao longo dos ciclos, a potência que o indutor absorve é
+              devolvida ao sistema.
+            </figcaption>
+          </figure>
+          <p class="concept">
+            O símbolo de medida de potência em um indutor é o Volt-Ampére
+            Reativo, ou VAR. A potência no indutor pode ser calculada por:
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/potencia_indutor_ca_formula.png"
+              alt="Fórmulas de calcular a potência em um indutor."
+              width="500px"
+            />
+          </figure>
+        </article>
+        <article class="sub-topic">
+          <h3>Potência no Capacitor</h3>
+          <p class="concept">
+            A potência no capacitor também depende do seno da defasagem como no
+            indutor, a diferença é que o ângulo para o indutor é de 90° e para o
+            capacitor de -90°.
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/potencia_capacitor_ca.png"
+              alt="Diagrama de potência em um capacitor em CA"
+              width="700px"
+            />
+          </figure>
+          <p class="concept">
+            Veja que que, diferente do indutor que atrasa a corrente em 90°, o
+            capacitor atrasa a tensão em 90°. Assim como no indutor, a potência
+            média de um capacitor é zero, a troca de potência entre uma fonte e
+            uma carga puramente capacitiva é zero. O símbolo de medida de
+            potência em um capacitor também é o Volt-Ampére Reativo, ou VAR. A
+            potência no capacitor pode ser calculada por:
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/potencia_capacitor_ca_formula.png"
+              alt="Fórmulas para calcular a potência em um capacitor."
+              width="300px"
+            />
+          </figure>
+        </article>
+        <article class="sub-topic">
+          <h3>Potência Aparente</h3>
+          <p class="concept">
+            Quando se calcula a potência total de uma impedância com parte real
+            e imaginária, o resultado é a potência aparente, que representa a
+            potência ativa e reativa que o circuito utiliza. A potência aparente
+            pode ser obtida por meio das fórmulas de potência:
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/potencia_aparente_formula.png"
+              alt="Fórmulas para calcular a potência aparente."
+              width="400px"
+            />
+          </figure>
+          <p class="concept">
+            Sua unidade é o Volt-Ampère (VA), diferente das potência no
+            capacitor e indutor, que tem como unidade o Volt-Ampère Reativo
+            (VAR).
+          </p>
+        </article>
+        <article class="sub-topic">
+          <h3>Triângulo de Potências</h3>
+          <p class="concept">
+            O triângulo de potências representa a relação entre as potências
+            aparente, ativa e reativa de um circuito.
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/triangulo_de_potencias.png"
+              alt="Diagrama do triângulo de potências."
+              width="600px"
+            />
+          </figure>
+          <p class="concept">
+            Perceba que na primeira figura, a potência indutiva, representada
+            por $Q_L$ está no sentido positivo do eixo imaginário, enquanto a
+            potência capacitiva, representada por $Q_C$, está no sentido
+            negativo. Isto ocorre pois como vimos, para o indutor, a defasagem é
+            de +90°, e para o capacitor, a defasagem é de -90°. O eixo
+            horizontal representa a potência ativa, aquela que realmente é usada
+            para produzir algum trabalho, e está sempre no sentido positivo do
+            eixo x. Abaixo, algumas fórmulas úteis quando se trabalha com
+            triângulo de potências e fator de potência:
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/triangulo_de_potencias_formulas.png"
+              alt="Fórmulas para o triângulo de potências."
+              width="800px"
+            />
+          </figure>
+        </article>
+      </section>
+      <section class="study-card">
+        <h2 class="section-title">Análise Nodal (Leis de Kirchhoff)</h2>
+        <article class="sub-topic">
+          <h3>Lei de Kirchhoff das Tensões: Lei das Malhas</h3>
+          <p class="concept">
+            A Lei das malhas de Kirchhoff diz que a soma algébrica das variações
+            de potencial em uma malha fechada é nula. Por convenção, adotamos o
+            sentido horário como positivo para análises de malhas.
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/lei_das_malhas_kirchhoff.png"
+              alt="Circuito resistivo em série"
+              width="600px"
+            />
+          </figure>
+          <ul class="component-list">
+            Convenções:
+            <li>Adoção do sentido horário;</li>
+            <li>+ → - = queda de tensão (-)</li>
+            <li>- → + = aumento de potencial (+)</li>
+          </ul>
+        </article>
+        <article class="sub-topic">
+          <h3>Lei de Kirchhoff das Correntes: Lei dos Nós</h3>
+          <p class="concept">
+            A Lei das correntes de Kirchhoff diz que a soma algébrica das
+            correntes que entram e saem de um nó é nula.
+          </p>
+          <p class="concept">O exemplo abaixo ilustra a lei das correntes:</p>
+          <figure class="card-item">
+            <img
+              src="data/lei_de_kirchhoff_das_correntes.png"
+              alt="Circuito resistivo misto"
+              width="600px"
+            />
+          </figure>
+          <p class="concept">
+            Veja que a corrente que entra no nó $a$ é a mesma que sai do nó $d$.
+          </p>
+        </article>
+        <article class="sub-topic">
+          <h3>Método das Tensões de Nó</h3>
+          <p class="concept">
+            Este método de análise de circuitos é baseado nas aplicações das
+            Leis de Kirchhoff. Ele é especialmente útil para resolver circuitos
+            onde não é possível realizar conversões.
+          </p>
+          <p class="concept">
+            Para a aplicação deste método, seguimos 4 regras:
+          </p>
+          <ul class="component-list">
+            <li>Definir a quantidade de nós do sistema;</li>
+            <li>Definir um nó de referência;</li>
+            <li>
+              Aplicar a Lei de Kirchhoff para as correntes que partem desse nó;
+            </li>
+            <li>Calcular cada corrente que parte desse nó.</li>
+          </ul>
+          <p class="concept">
+            O exemplo abaixo ilustra o uso do método das Tensões de Nó:
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/circuito_metodo_das_tensoes.png"
+              alt="Diagrama do método das tensões de nó"
+              width="600px"
+            />
+          </figure>
+          <p class="concept">
+            Aqui definimos a quantidade de nós do sistema, que são 2 ($V_a$ e
+            $V_b$). Após, escolhemos $V_b$ como nó de referência (terra), por
+            isso é mostrado apenas $0V$. Aplicando a Lei de Kirchhoff para as
+            correntes que partem do nó (não consideramos o nó de referência
+            aqui), temos 3 correntes ($I_a$, $I_b$ e $I_c$). Seguindo a Lei de
+            Kirchhoff, o somatório destas correntes é nulo, portanto para
+            encontrar os valores de cada corrente, aplicamos Lei de Ohm, onde
+            obtemos:
+          </p>
+          <div class="box-wrapper">
+            <figure class="card-item">
+              <img
+                src="data/somatorio_tres_correntes.png"
+                alt="Somatório de 3 correntes."
+                width="350px"
+              />
+            </figure>
+            <figure class="card-item">
+              <img
+                src="data/somatorio_exemplo_metodo_nodal.png"
+                alt="Somatório de 3 correntes."
+                width="500px"
+              />
+            </figure>
+          </div>
+          <p class="concept">
+            A partir daqui, basta realizar os cálculos. Veja este outro exemplo
+            mais complexo com fontes de corrente e fontes dependentes e como
+            resolveríamos:
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/exemplo_2_metodo_nodal.png"
+              alt="Exemplo do método das tensões de nó"
+              width="700px"
+            />
+          </figure>
+        </article>
+      </section>
     </main>
   </body>
 </html>
