@@ -29,12 +29,12 @@
     --ff-serif: 'Cambria', 'Cochin', 'Georgia', 'Times New Roman', serif;
     --ff-mono: "Fira Code", monospace;
 
-    /* Espaçamentos Padronizados (1rem = 1px) */
-    --sp-xs: 4rem;
-    --sp-sm: 8rem;
-    --sp-md: 16rem;
-    --sp-lg: 24rem;
-    --sp-xl: 40rem;
+    /* Espaçamentos Padronizados (1rem = 10px) */
+    --sp-xs: 0.4rem;
+    --sp-sm: 0.8rem;
+    --sp-md: 1.6rem;
+    --sp-lg: 2.4rem;
+    --sp-xl: 4rem;
 }
 
 /* =========================================
@@ -47,7 +47,8 @@
 }
 
 html {
-    font-size: 6.25%; /* 1px = 6.25% de 16px. Portanto, 1rem = 1px */
+    /* Padrão da Indústria para Acessibilidade Mobile */
+    font-size: 62.5%; /* 1px = 62.5% de 16px. Portanto, 1rem = 10px */
 }
 
 body {
@@ -55,9 +56,9 @@ body {
     font-family: var(--ff-serif);
     color: var(--clr-text-base);
     padding: var(--sp-lg);
-    font-size: 18rem;
+    font-size: 1.8rem;
     line-height: 1.6;
-    max-width: 1000rem;
+    max-width: 100rem;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -75,13 +76,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 32rem;
+    font-size: 3.2rem;
     margin-top: var(--sp-xl);
     margin-bottom: var(--sp-lg);
 }
 
 h2 {
-    font-size: 28rem;
+    font-size: 2.8rem;
     margin-top: var(--sp-xl);
     margin-bottom: var(--sp-md);
     border-bottom: 1px solid var(--clr-border-soft);
@@ -89,25 +90,25 @@ h2 {
 }
 
 h3 {
-    font-size: 24rem;
-    margin-top: 32rem;
-    margin-bottom: 12rem;
+    font-size: 2.4rem;
+    margin-top: 3.2rem;
+    margin-bottom: 1.2rem;
 }
 
 h4 {
-    font-size: 20rem;
+    font-size: 2rem;
     margin-top: var(--sp-lg);
     margin-bottom: var(--sp-sm);
 }
 
 h5 {
-    font-size: 18rem;
-    margin-top: 20rem;
+    font-size: 1.8rem;
+    margin-top: 2rem;
     margin-bottom: var(--sp-sm);
 }
 
 h6 {
-    font-size: 16rem;
+    font-size: 1.6rem;
     margin-top: var(--sp-md);
     margin-bottom: var(--sp-sm);
     text-transform: uppercase;
@@ -123,20 +124,20 @@ p {
    CONTAINERS E ESTRUTURA
    ========================================= */
 .content-container {
-    max-width: 1000rem;
+    max-width: 100rem;
     margin: 0 auto;
 }
 
 .main-header {
     text-align: center;
     margin-bottom: var(--sp-xl);
-    padding-bottom: 10rem;
+    padding-bottom: 1rem;
     border-bottom: 2px solid var(--clr-text-heading);
 }
 
 .main-header h1 {
     color: var(--clr-text-heading);
-    font-size: 40rem;
+    font-size: 4rem;
     margin-top: 0;
 }
 
@@ -147,8 +148,8 @@ p {
     background: var(--clr-bg-surface);
     border: 1px solid var(--clr-border-base);
     border-radius: 8px;
-    padding: 25rem;
-    margin-bottom: 30rem;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
@@ -156,12 +157,12 @@ p {
     color: var(--clr-text-primary);
     border-bottom: 1px solid var(--clr-border-soft);
     padding-bottom: var(--sp-sm);
-    margin-bottom: 15rem;
+    margin-bottom: 1.5rem;
 }
 
 .concept {
-    font-size: 18rem;
-    margin-bottom: 15rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Box e Formula Wrapper usam o mesmo estilo visual */
@@ -170,19 +171,19 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
+    gap: 1.5rem;
     background-color: var(--clr-bg-alt);
-    padding: 15rem;
+    padding: 1.5rem;
     border-radius: 6px;
-    margin-bottom: 15rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Destaques (como Efeito Joule) */
 .highlight-box {
     background-color: var(--clr-bg-highlight);
     border-left: 4px solid var(--clr-border-warning);
-    padding: 15rem;
-    margin: 20rem 0;
+    padding: 1.5rem;
+    margin: 2rem 0;
     border-radius: 0 4px 4px 0;
     color: var(--clr-text-warning);
 }
@@ -190,15 +191,15 @@ p {
 /* Seção de exemplos */
 .examples-section {
     background-color: var(--clr-bg-example);
-    padding: 15rem;
+    padding: 1.5rem;
     border-left: 4px solid var(--clr-border-primary);
     border-radius: 0 6px 6px 0;
-    margin: 20rem 0;
+    margin: 2rem 0;
 }
 
 .resolution {
     background-color: var(--clr-bg-surface);
-    padding: 10rem;
+    padding: 1rem;
     margin-top: var(--sp-sm);
     border: 1px dashed var(--clr-border-dark);
     font-style: italic;
@@ -209,23 +210,23 @@ p {
    IMAGENS E FÓRMULAS
    ========================================= */
 .formula-image {
-    max-width: 250rem;
+    max-width: 25rem;
     height: auto;
 }
 
 .formula {
-    font-size: 20rem;
+    font-size: 2rem;
     font-weight: bold;
     font-family: var(--ff-mono);
 }
 
 .img-resistor {
-    max-height: 140rem;
+    max-height: 14rem;
     width: auto;
 }
 
 .symbol-text {
-    font-size: 18rem;
+    font-size: 1.8rem;
 }
 
 .image-container img {
@@ -236,7 +237,7 @@ p {
 }
 
 .block-image {
-    margin: 20rem 0;
+    margin: 2rem 0;
     text-align: center;
 }
 
@@ -244,73 +245,73 @@ p {
    LISTAS E GRIDS
    ========================================= */
 .standard-list {
-    margin-left: 20rem;
-    margin-bottom: 15rem;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .standard-list li {
-    margin-bottom: 5rem;
+    margin-bottom: 0.5rem;
 }
 
 .example-list {
     list-style-type: decimal;
-    margin-left: 20rem;
-    margin-top: 10rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 .example-list li {
-    margin-bottom: 15rem;
+    margin-bottom: 1.5rem;
 }
 
 .generator-types {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20rem;
-    margin-top: 15rem;
+    gap: 2rem;
+    margin-top: 1.5rem;
 }
 
 .generator-box {
     background: var(--clr-bg-surface);
     border: 1px solid var(--clr-border-base);
-    padding: 15rem;
+    padding: 1.5rem;
     border-radius: 6px;
 }
 
 .component-list {
     list-style: none;
-    margin-top: 15rem;
+    margin-top: 1.5rem;
 }
 
 .component-list li {
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 10rem;
+    gap: 1rem;
     background: #f9f9f9;
-    padding: 10rem 100rem;
-    margin-bottom: 10rem;
+    padding: 1rem 10rem;
+    margin-bottom: 1rem;
     border-radius: 4px;
     border: 1px solid #eee;
 }
 
 .element-types {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220rem, 1fr));
-    gap: 20rem;
-    margin-top: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
     margin-bottom: 10px;
 }
 
 .type-card {
     background: #fafafa;
     border: 1px solid #ddd;
-    padding: 15rem;
+    padding: 1.5rem;
     border-radius: 6px;
     border-top: 3px solid var(--clr-text-success);
 }
 
 .type-card h4 {
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
     color: var(--clr-text-success);
 }
 
@@ -319,14 +320,14 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: var(--sp-sm);
-    margin-top: 10rem;
+    margin-top: 1rem;
 }
 
 .tags-list li {
     background-color: var(--clr-bg-tag);
-    padding: 4rem 10rem;
+    padding: 0.4rem 1rem;
     border-radius: 20px;
-    font-size: 14rem;
+    font-size: 1.4rem;
     color: #34495e;
 }
 
@@ -334,7 +335,7 @@ p {
    FIGURE E FIGCAPTION (Imagens com Legenda)
    ========================================= */
 .card-item {
-    padding: 24rem;
+    padding: 2.4rem;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -347,12 +348,12 @@ p {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-bottom: var(--sp-md); /* Corrigido de 1px para 16rem */
+    margin-bottom: var(--sp-md);
 }
 
 .card-item figcaption {
     text-align: center;
-    font-size: 16rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     color: var(--clr-text-muted);
 }
@@ -368,37 +369,37 @@ p {
     .component-list li {
         flex-direction: column;
         align-items: flex-start;
-        gap: 10rem;
-        padding: 15rem; /* Ajustado para não ficar espremido no mobile */
+        gap: 1rem;
+        padding: 1.5rem; /* Ajustado para não ficar espremido no mobile */
     }
 
     /* Mobile-specific body adjustments */
     body {
         padding: var(--sp-md); /* Reduced padding for mobile */
-        font-size: 16rem; /* Slightly smaller base font size for mobile */
+        font-size: 1.6rem; /* Slightly smaller base font size for mobile */
     }
 
     /* Adjust header and title sizes for mobile */
     .main-header h1 {
-        font-size: 28rem; /* Reduced from 40rem */
+        font-size: 2.8rem; /* Reduced from 4rem */
         margin-top: var(--sp-lg);
     }
 
     h1 {
-        font-size: 24rem; /* Reduced from 32rem */
+        font-size: 2.4rem; /* Reduced from 3.2rem */
         margin-top: var(--sp-lg);
         margin-bottom: var(--sp-md);
     }
 
     h2 {
-        font-size: 22rem; /* Reduced from 28rem */
+        font-size: 2.2rem; /* Reduced from 2.8rem */
         margin-top: var(--sp-lg);
         margin-bottom: var(--sp-sm);
     }
 
     h3 {
-        font-size: 20rem; /* Reduced from 24rem */
-        margin-top: 24rem;
+        font-size: 2rem; /* Reduced from 2.4rem */
+        margin-top: 2.4rem;
         margin-bottom: var(--sp-sm);
     }
 
@@ -423,17 +424,17 @@ p {
 
     /* Adjust formula images */
     .formula-image {
-        max-width: 80%; /* Reduced from 250rem (250px) */
+        max-width: 80%; /* Reduced from 25rem (250px) */
     }
 
     /* Adjust symbol text */
     .symbol-text {
-        font-size: 16rem; /* Reduced from 18rem */
+        font-size: 1.6rem; /* Reduced from 1.8rem */
     }
 
     /* Adjust formula text */
     .formula {
-        font-size: 16rem; /* Reduced from 20rem */
+        font-size: 1.6rem; /* Reduced from 2rem */
     }
 
     /* Adjust lists */
@@ -464,7 +465,7 @@ p {
 
     .tags-list li {
         padding: var(--sp-xs) var(--sp-sm);
-        font-size: 12rem;
+        font-size: 1.2rem;
     }
 
     /* Adjust card items */
@@ -477,6 +478,6 @@ p {
     }
 
     .card-item figcaption {
-        font-size: 14rem;
+        font-size: 1.4rem;
     }
 }
