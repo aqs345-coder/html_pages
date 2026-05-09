@@ -371,109 +371,111 @@ p {
         gap: 10rem;
         padding: 15rem; /* Ajustado para não ficar espremido no mobile */
     }
-    
+
     /* Mobile-specific body adjustments */
     body {
         padding: var(--sp-md); /* Reduced padding for mobile */
         font-size: 16rem; /* Slightly smaller base font size for mobile */
     }
-    
+
     /* Adjust header and title sizes for mobile */
     .main-header h1 {
         font-size: 28rem; /* Reduced from 40rem */
         margin-top: var(--sp-lg);
     }
-    
+
     h1 {
         font-size: 24rem; /* Reduced from 32rem */
         margin-top: var(--sp-lg);
         margin-bottom: var(--sp-md);
     }
-    
+
     h2 {
         font-size: 22rem; /* Reduced from 28rem */
         margin-top: var(--sp-lg);
         margin-bottom: var(--sp-sm);
     }
-    
+
     h3 {
         font-size: 20rem; /* Reduced from 24rem */
         margin-top: 24rem;
         margin-bottom: var(--sp-sm);
     }
-    
+
     /* Adjust containers and cards */
     .content-container {
         padding: 0 var(--sp-sm);
     }
-    
+
     .study-card {
         padding: var(--sp-md);
         margin-bottom: var(--sp-lg);
     }
-    
+
     /* Adjust box wrappers */
     .box-wrapper,
     .formula-wrapper {
         padding: var(--sp-md);
         gap: var(--sp-sm);
+        flex-direction: column; /* EMPILHA OS ELEMENTOS: Imagem em cima, texto embaixo */
+        text-align: center;
     }
-    
+
     /* Adjust formula images */
     .formula-image {
         max-width: 80%; /* Reduced from 250rem (250px) */
     }
-    
+
     /* Adjust symbol text */
     .symbol-text {
         font-size: 16rem; /* Reduced from 18rem */
     }
-    
+
     /* Adjust formula text */
     .formula {
         font-size: 16rem; /* Reduced from 20rem */
     }
-    
+
     /* Adjust lists */
     .standard-list {
         margin-left: var(--sp-md);
     }
-    
+
     .example-list {
         margin-left: var(--sp-md);
     }
-    
+
     /* Adjust component list items */
     .component-list li {
         padding: var(--sp-md) var(--sp-lg);
         gap: var(--sp-sm);
     }
-    
+
     /* Adjust element types grid */
     .element-types {
         grid-template-columns: 1fr;
         gap: var(--sp-md);
     }
-    
+
     /* Adjust tags list */
     .tags-list {
         gap: var(--sp-xs);
     }
-    
+
     .tags-list li {
         padding: var(--sp-xs) var(--sp-sm);
         font-size: 12rem;
     }
-    
+
     /* Adjust card items */
     .card-item {
         padding: var(--sp-md);
     }
-    
+
     .card-item img {
         margin-bottom: var(--sp-sm);
     }
-    
+
     .card-item figcaption {
         font-size: 14rem;
     }
