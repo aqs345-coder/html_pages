@@ -1749,10 +1749,84 @@
             <img
               src="data/exemplo_2_metodo_nodal.png"
               alt="Exemplo do método das tensões de nó"
-              width="700px"
+              width="600px"
             />
           </figure>
         </article>
+        <article class="sub-topic">
+          <h3>Método das Correntes de Malha</h3>
+          <p class="concept">
+            Este método se baseia na Lei de Kirchhoff das malhas. Análogo ao
+            método nodal, também seguimos algumas regras iniciais para aplicação
+            deste método:
+          </p>
+          <ul class="component-list">
+            <li>
+              Determinar um sentido para as correntes em cada malha do circuito;
+            </li>
+            <li>
+              Determinar a polaridade de cada elemento do circuito de acordo com
+              o sentido das correntes estabelecidas;
+            </li>
+            <li>Aplicar a 2ª Lei de Kirchhoff em cada malha do circuito;</li>
+            <li>Resolver o sistema de equações;</li>
+            <li>
+              Determinar as correntes dos ramos que possuem duas ou mais
+              corrente s passando por ele.
+            </li>
+          </ul>
+          <p class="concept">
+            O exemplo abaixo ilustra a aplicação dos dois primeiros passos do
+            método. Veja que definimos as correntes das duas malhas com sentido
+            horário, o que geralmente é o recomendado.
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/circuito_metodo_das_malhas.png"
+              alt="Circuito para o método das malhas"
+              width="700px"
+            />
+          </figure>
+          <p class="concept">
+            E aplicando o próximo passo, temos as seguites equações:
+          </p>
+          <figure class="card-item">
+            <img
+              src="data/equacoes_metodo_das_malhas.png"
+              alt="Equações do método das malhas"
+              width="400px"
+            />
+          </figure>
+          <p class="concept">
+            A partir daqui, é só resolução matemática para encontrar as
+            correntes que passam pelos ramos deste circuito. Vale ressaltar que
+            para o ramo central deste circuito (que possui a resistência $R$), a
+            corrente total é a diferença entre $I_A$ e $I_B$, pois apresentam
+            sentido contrário.
+          </p>
+        </article>
+      </section>
+      <section class="study-card">
+        <h2 class="section-title">Teorema da Superposição</h2>
+        <p class="concept">
+          Este teorema serve como base para o método da superposição, utilizado
+          para realizar a análise de circuitos. Diferentemente dos métodos nodal
+          e de malha, este elimina a necessidade de resolver um sistema de
+          equações lineares simultâneas ao considerar separadamente os efeitos
+          de cada uma das fontes. O Teorema diz:
+          <i
+            >A corrente, ou tensão, através de qualquer elemento é igual a soma
+            algébrica das correntes ou tensões produzidas independentmente por
+            cada fonte.</i
+          >
+        </p>
+        <p class="concept">
+          Se formos considerar os efeitos de cada fontes, as outras fontes devem
+          ser removidas. Qualquer impedância interna associada à fonte tem de
+          permanecer no circuito. Se temos uma fonte de tensão, trocamos ela por
+          um curto-circuito, caso seja uma fonte de corrente, trocamos por um
+          circuito aberto.
+        </p>
       </section>
     </main>
   </body>
