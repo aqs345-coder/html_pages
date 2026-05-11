@@ -1827,6 +1827,81 @@
           um curto-circuito, caso seja uma fonte de corrente, trocamos por um
           circuito aberto.
         </p>
+        <p class="concept">Acompanhe o exemplo abaixo:</p>
+        <figure class="card-item">
+          <img
+            src="data/exemplo_superposicao_valores.png"
+            alt="Circuito para o método da superposição"
+            width="700px"
+          />
+        </figure>
+        <figure class="card-item">
+          <img
+            src="data/exemplo_superposicao.png"
+            alt="Circuito para o método da superposição"
+            width="550px"
+          />
+        </figure>
+        <p class="concept">
+          Analisando este circuito pelo método da superposição, teremos duas
+          derivações, sendo cada uma delas mantendo uma das fontes e
+          substituindo a outra:
+        </p>
+        <div class="box-wrapper">
+          <figure class="card-item">
+            <img
+              src="data/exemplo_superposicao_1.png"
+              alt="Circuito para o método da superposição 1"
+              width="550px"
+            />
+            <figcaption>Circuito 1</figcaption>
+          </figure>
+          <figure class="card-item">
+            <img
+              src="data/exemplo_superposicao_2.png"
+              alt="Circuito para o método da superposição 2"
+              width="550px"
+            />
+            <figcaption>Circuito 2</figcaption>
+          </figure>
+        </div>
+        <p class="concept">
+          Perceba que acompanhamos a polaridade normal dos elementos, e portanto
+          a corrente dos circuitos segue a polaridade da fonte.
+        </p>
+        <p class="concept">
+          Para encotrar a corrente $I$ do circuito principal, analisamos cada
+          contribuição dos circuitos derivados separadamente, e, ao final,
+          fazemos a soma algébrica de cada corrente ($I'$ e $I''$). Veja que,
+          para a impedância $Z_2$, as correntes derivadas possuem sentido
+          contrário, portanto a resolução será $I' - I''$, pois a corrente $I'$
+          é a que acompanha o sentido original da corrente designada para $Z_2$
+          no circuito original. A solução final é:
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/exemplo_superposicao_3.png"
+            alt="Circuito resolvido pelo método da superposição"
+            width="800px"
+          />
+        </figure>
+      </section>
+      <section class="study-card">
+        <h2 class="section-title">Teorema de Thevenin</h2>
+        <p class="concept">
+          O Teorema de Thevenin é um princípio fundamental na análise de
+          circuitos que permite simplificar um circuito complexo em uma forma
+          mais manejável. Ele afirma que qualquer circuito linear, visto a
+          partir de dois terminais, pode ser representado por uma fonte de
+          tensão ideal ($E_{Th}$) em série com uma impedância ($Z_{Th}$).
+        </p>
+        <figure class="card-item">
+          <img
+            src="data/representacao_thevenin.png"
+            alt="Circuito de Thevenin"
+            width="300px"
+          />
+        </figure>
       </section>
     </main>
   </body>
